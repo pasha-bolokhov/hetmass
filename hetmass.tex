@@ -156,6 +156,66 @@
 
 \begin{document}
 
+\begin{titlepage}
+
+\begin{flushright}
+FTPI-MINN-09/?? UMN-TH-????/09\\
+%ITEP-TH-XX/09\\
+June 30, 2009
+\end{flushright}
+
+\begin{center}
+
+{\Large \bf   Heterotic \ntwoo \boldmath{${\rm CP}(N-1)$}
+model \\ with twisted masses
+%\\[2mm]
+ }
+\end{center}
+
+\begin{center}
+{\bf P. A. Bolokhov$^{a,b}$, M.~Shifman$^{c}$ and \bf A.~Yung$^{c,d}$}
+\end {center}
+\vspace{0.3cm}
+\begin{center}
+
+$^a${\it Physics and Astronomy Department, University of Pittsburgh, Pittsburgh, Pennsylvania, 15260, USA}\\
+$^b${\it Theoretical Physics Department, St.Petersburg State University, Ulyanovskaya~1, 
+	 Peterhof, St.Petersburg, 198504, Russia}\\
+$^c${\it  William I. Fine Theoretical Physics Institute,
+University of Minnesota,
+Minneapolis, MN 55455, USA}\\
+$^{d}${\it Petersburg Nuclear Physics Institute, Gatchina, St. Petersburg
+188300, Russia}\\
+
+\end{center}
+
+\begin{abstract}
+
+We continue the  study of heterotic non-Abelian  flux tubes (strings). Previously it was shown that the internal dynamics
+of  orientational zero modes
+of non-Abelian string in \ntwo QCD with U($N$) gauge group and 
+$N_f=N$ fundamental matter multiplets is described by the
+effective low energy two dimensional \ntwot CP$(N-1)$ model
+with twisted masses on the string world sheet. On the other hand, it was shown that \none deformations of massless 
+U$(N)$ bulk theory leads to  heterotic deformations
+of two dimensional CP$(N-1)$ model on the string 
+classically preserving
+\ntwoo supersymmetry. This supersymmetry was shown to be broken 
+by quantum effects. Here we combine these two results and
+present a two dimensional heterotic \ntwot CP$(N-1)$ model
+with twisted masses. It is supposed to describe the internal dynamics of non-Abelian strings in massive \ntwo QCD with
+\none preserving deformations. We present gauge and geometric
+formulations of the word sheet theory and check \ntwoo 
+supersymmetry. We show that this supersymmetry is spontaneously
+broken for generic masses already on the classical level.
+
+
+ 
+
+\end{abstract}
+
+\end{titlepage}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %	  		        S E C T I O N
@@ -171,15 +231,27 @@
 \section{Gauge Formulation}
 \label{gaugef}
 
-In the gauged formulation, the \ntwoo \CPC sigma model with twisted
+In this section we first review two dimensional \ntwot
+CP$(N-1)$ sigma model with twisted masses in the 
+gauge formulation and then present its \ntwoo deformation.
+
+\subsection{ \ntwot CP$(N-1)$  model}
+
+As we already mentioned two dimensional
+supersymmetric \ntwot CP$(N-1)$  model was shown to describe
+internal dynamics of  non-Abelian strings in \ntwo
+supersymmetric QCD with U$(N)$ gauge group and $N$ flavors
+of quarks \cite{HT1,ABEKY,SYmon,HT2}, see
+also reviews \cite{Trev,SYrev,Jrev,Trev2}. In the gauge formulation this model 
+with twisted
 masses $ m^l $, $ l = 1, ...\, N $ is given by the strong coupling limit $ e ~\to~ \infty $ of
-the following U(1) theory
+the following U(1) gauge theory \cite{W79}
 \begin{align}
-\label{sigma_full}
+\label{sigma22}
 % 
 \notag
  	\mc{L}_\text{1+1} & ~~=~~
-	-\,\frac{1}{8e^2}\,F_{RL}^2  ~+~ \frac{1}{e^2} \left|\p_k \sigma\right|^2 
+	\,\frac{1}{4e^2}\,F_{kl}^2  ~+~ \frac{1}{e^2} \left|\p_k \sigma\right|^2 
 	~+~ \frac{1}{2e^2}\, D^2
 	~+~ \frac{1}{e^2}\, \blar\, i\p_L\, \lar  ~+~  \frac{1}{e^2} \blal\, i\p_R\, \lal
 	\\[2mm]
@@ -188,7 +260,8 @@ the following U(1) theory
 	&
 	\hspace{-0.4cm}
 	~+~ 2\beta \biggl \lgroup
-	\left| \nabla n \right|^2  ~+~ 2 \Bigl| \sigma - \frac{m^l}{2} \Bigr|^2 \left| n^l \right|^2
+	\left| \nabla n \right|^2  ~+~ 2 \Bigl| \sigma - \frac{m^l}
+	{\sqrt{2}} \Bigr|^2 \left| n^l \right|^2
 	~+~ iD \left( \left|n^l \right|^2 - 1 \right)
 	\\
 %
@@ -204,33 +277,33 @@ the following U(1) theory
 	\hspace{-0.4cm}\phantom{2\beta\lgroup}
 	~+~ i\sqrt{2}\, \ov{\xi_{[R}\, \lambda}{}_{L]}\, n
 	~-~ i\sqrt{2}\, \nbar\,  \lambda_{[R}\, \xi_{L]}
-	\\[2mm]
-%
-\notag
-	&
-	\hspace{-0.4cm}\phantom{2\beta\lgroup}
-	~+~ \bzr\, i\p_L\, \zr   ~+~   \bff\, \ff
-	\\
-%
-\notag
-	&
-	\hspace{-0.4cm}\phantom{2\beta\lgroup}
-	~-~ 2i\, \frac{\p^2 \hat{\mc{W}}}{\p \sigma^2}\, \blal\, \zr
-	~-~ 2i\, \frac{\p^2 \hat{\ov{\mc{W}}}}{\p \ov{\sigma}{}^2}\, \bzr\, \lal
-	~+~ 2i\, \frac{\p \hat{\mc{W}}}{\p \sigma}\, \ff
-	~+~ 2i\, \bff\, \frac{\p \hat{\ov{\mc{W}}}}{\p \ov{\sigma}}
-	\biggr\rgroup ,
+ ,
 	\\[1mm]
 %
 \notag
 	&
 	l~=~1,...\,N,
 \end{align}
-	where $ \hat{\mc{W}}(\Sigma) $ is an arbitrary \ntwot breaking superpotential function.
-	In particular one can choose the latter to be a quadratic deformation
-\[
-	\hat{\mc{W}}(\Sigma) ~~=~~ \frac{1}{2}\, \delta\, \Sigma^2\,.
-\]
+where
+\beq
+\nabla_k=\p_k-iA_k, \qquad \nabla_{R,L}=\nabla_0\pm i\nabla_3,
+\qquad \lambda_{[R}\, \xi_{L]}= \lambda_R\xi_L-\lambda_L\xi_R
+\eeq
+while $x_k$, $k=0,3$ denote world sheet coordinates
+on the string (we assume that the string is stretched in the
+$x_3$ direction). Here $n^l$ are $N$ CP$(N-1)$ model 
+complex scalar fields
+and $\xi^l_{R,L}$ are their fermionic superpartners.
+All fields of the gauge supermultiplet, namely
+the gauge field $A_k$, complex scalar $\sigma$, fermions
+$\lambda_{R,L}$ and axillary field $D$ are not dynamical
+in the strong coupling limit $e^2\to\infty$. They can be 
+excluded via algebraic equations of motion. In particular,
+integration over $D$ and $\lambda$ give CP$(N-1)$ model
+constraints
+\beq
+|n^l|^2=1, \qquad \bar{n}_l\xi^l_{R,L}=0.
+\eeq
 
 	We need to comment on our summation conventions for the CP($N-1$) indices $l$, {\it etc}, since
 	it becomes non-trivial once the masses are introduced.
@@ -240,20 +313,16 @@ the following U(1) theory
 	in the end of equations.
 	Finally, we omit the summation sign in those terms where the sum is obvious,
 	such as the kinetic terms $ \ov{\xi}\, i\nabla \xi $.
-
-	To prove supersymmetry of \eqref{sigma_full} it is easier to include the factor of $ 2\beta $ into 
+	
+	To prove supersymmetry of \eqref{sigma22} it is easier to include the factor of $ 2\beta $ into 
 	the bracket by redefining the corresponding fields, while to determine the correspondence between the 
-	above model and the geometric formulation of \ntwot \CPC model with twisted masses it is easier to leave
+	above model and the geometric formulation of CP$(N-1)$ model with twisted masses it is easier to leave
 	it outside, so that $ |n^l|^2 = 1 $.
-
-        We prove supersymmetry of the above action in three steps
-	(for now we absorb the factor of $ 2\beta $ into the definition of $ n^l $, $ \xi^l $,
-        $ \zeta_R $ and $ \mc{F} $).
-        The massive deformation and the heterotic deformation are independent of each other, as we shortly prove.
-	We can first consider the theory deformed only by twisted masses, and then add \ntwoo terms.
-        Therefore, as the first step we discard the superpotential $ \hat{\mc{W}} $.
-        Then the theory splits into two decoupled sectors --- orientational and translational one. 
-        The orientational sector, apart from the 2-dimensional FI term $ - i D $ is nothing but
+	
+     The model (\ref{sigma22}) ( the
+     orientational sector of the world sheet theory
+     on the string),
+      apart from the 2-dimensional FI term $ - i D $ is nothing but
         the dimensionally reduced \none four-dimensional SQED.
         From this fact one obtains the transformation properties of the component fields under 
         \ntwot supersymmetry:
@@ -299,43 +368,43 @@ the following U(1) theory
                    \\
 %
 \label{msusy}
-  \delta\phi & ~~=~~ -\,\sqrt{2}\, \epsilon_{[R}\, \xi_{L]} 
+  \delta n & ~~=~~ -\,\sqrt{2}\, \epsilon_{[R}\, \xi_{L]} 
                    \\
 %
 \notag
-  \delta\ov{\phi} & ~~=~~ +\,\sqrt{2}\,\ov{\epsilon_{[R}\, \xi}{}_{L]}
+  \delta\ov{n} & ~~=~~ +\,\sqrt{2}\,\ov{\epsilon_{[R}\, \xi}{}_{L]}
                    \\
 %
 \notag
   \delta\xi_R^l & ~~=~~
-     -\, i\sqrt{2}\, \beel\, \nabla_R\, \phi^l ~+~ \sqrt{2}\, \eer\, F^l 
-     ~-~ 2i\, \beer\, \Bigl(\sigma - \frac{m^l}{\sqrt{2}}\Bigr)\, \phi^l
+     -\, i\sqrt{2}\, \beel\, \nabla_R\, n^l ~+~ \sqrt{2}\, \eer\, F^l 
+     ~-~ 2i\, \beer\, \Bigl(\sigma - \frac{m^l}{\sqrt{2}}\Bigr)\, n^l
      \\
 %
 \notag
   \delta\xi_L^l & ~~=~~
-     +\, i\sqrt{2}\, \beer\, \nabla_L\, \phi^l ~+~ \sqrt{2}\, \eel\, F^l
-     ~+~ 2i\, \beel\, \Bigl(\ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}}\Bigr)\, \phi^l
+     +\, i\sqrt{2}\, \beer\, \nabla_L\, n^l ~+~ \sqrt{2}\, \eel\, F^l
+     ~+~ 2i\, \beel\, \Bigl(\ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}}\Bigr)\, n^l
      \\
 %
 \notag
   \delta\ov{\xi}{}_{lR} & ~~=~~
-     +\, i\sqrt{2}\, \eel\, \nabla_R\, \ov{\phi}{}_l 
+     +\, i\sqrt{2}\, \eel\, \nabla_R\, \ov{n}{}_l 
      ~+~ \sqrt{2}\, \beer\, \ov{F}{}_l 
-     ~-~ 2i\, \eer\, \Bigl(\ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}}\Bigr)\, \ov{\phi}{}_l
+     ~-~ 2i\, \eer\, \Bigl(\ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}}\Bigr)\, \ov{n}{}_l
      \\
 %
 \notag
   \delta\ov{\xi}{}_{lL} & ~~=~~
-     -\, i\sqrt{2}\, \eer\, \nabla_L\, \ov{\phi}{}_l
+     -\, i\sqrt{2}\, \eer\, \nabla_L\, \ov{n}{}_l
      ~+~ \sqrt{2}\, \beel\, \ov{F}{}_l
-     ~+~ 2i\, \eel\, \Bigl(\sigma - \frac{m^l}{\sqrt{2}}\Bigr)\, \ov{\phi}{}_l
+     ~+~ 2i\, \eel\, \Bigl(\sigma - \frac{m^l}{\sqrt{2}}\Bigr)\, \ov{n}{}_l
      \\
 %
 \notag
   \delta F^l & ~~=~~
      -\,i\sqrt{2} \lgr \beel\, \nabla_R\, \xi_L^l ~+~ \beer\, \nabla_L \xi_R^l \rgr
-     ~-~ 2i\, \ov{\epsilon_{[R}\, \lambda}{}_{L]}\, \phi^l
+     ~-~ 2i\, \ov{\epsilon_{[R}\, \lambda}{}_{L]}\, n^l
      \\
 \notag
      & \phantom{~~=~~}
@@ -347,24 +416,191 @@ the following U(1) theory
   \delta \ov{F}{}_l & ~~=~~
      -\,i\sqrt{2} \lgr \eer\, \nabla_L\, \ov{\xi}{}_{lR} ~+~ 
                        \eel\, \nabla_R\, \ov{\xi}{}_{lL} \rgr
-     ~+~ 2i\,\ov{\phi}{}_l\, \epsilon_{[R}\, \lambda_{L]} 
+     ~+~ 2i\,\ov{n}{}_l\, \epsilon_{[R}\, \lambda_{L]} 
      \\
 \notag
      & \phantom{~~=~~}
      ~+~ 2i \lgr \eel \Bigl(\sigma - \frac{m^l}{\sqrt{2}}\Bigr)\, \ov{\xi}{}_{lR} 
              ~+~ \eer \Bigl(\ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}}\Bigr)\, 
-                            \ov{\xi}_{lL} \rgr .
+                            \ov{\xi}_{lL} \rgr ,
 \end{align}
-	Obviously, with vanishing masses the theory \eqref{sigma_full} is invariant
+where $F^l$ are $F$-components of $(n^l,\xi^l)$
+supermultiplet, while $F_{RL}=-2i\,F_{03}$ is a
+convenient notation for the gauge field
+strength.
+
+	Obviously, with vanishing masses the theory \eqref{sigma22} is invariant
 	under the massless version of transformations \eqref{msusy}.
 	The masses themselves can be considered just as constant gauge fields of
-	the ``original'' four-dimensional theory, directed in the $ (x_1,\, x_2) $-plane.
+	the ``original'' four-dimensional theory, directed in the $ (x_1,\, x_2) $-plane \cite{HaHo,Dorey}.
 	After the dimensional reduction they become constant ``$\sigma$'s''.
 	Hence supersymmetry should be preserved by twisted mass deformations\footnote{
           A vector supermultiplet $(A_k,\,\sigma,\,\lambda,\,D)$ with only 
           $ \sigma $ nonvanishing and yet constant, is obviously invariant under \ntwot supersymmetry.}, 
 	and it indeed is.
-	This is the second step.
+
+ 
+
+\subsection{ Heterotic \ntwoo \CPC  model}
+
+For the \ntwo supersymmetric bulk theory the translational
+sector of the effective theory on the non-Abelian string 
+decouples from the orientational one. The translational sector
+associated with position of the string in the $(x_1,x_2)$
+plane $x_{0i}$, $i=1,2$ and its fermionic superpartners
+$\zeta_L$ and $\zeta_R$. Orientational sector is described by the \ntwot CP$(N-1)$ model (\ref{sigma22}). Once \ntwo
+breaking deformation is added in the bulk theory this is no longer true \cite{Edalati}. The translational sector becomes
+mixed with the orientational one. In fact, fields $x_{0i}$ and 
+$\zeta_L$ are still free and decouple, however the 
+right-handed translational modulus $\zeta_R$ mixes with
+the orientational sector. This is the origin of the name
+"heterotic \ntwoo \CPC model".
+
+
+Now we combine the heterotic \ntwoo deformations of massless
+\CPC model studied in \cite{Edalati, SYhet,SYhetlN,BSYhet}
+with CP$(N-1)$ model with twisted masses (\ref{sigma22}).
+We assume that the model we present in this section 
+describes world sheet dynamics of non-Abelian strings
+in massive \ntwo QCD with gauge group U$(N)$ and $N$ flavors of quarks
+deformed by the superpotential mass term for the adjoint multiplet
+\beq
+{\mathcal W}_{3+1}=\frac{\mu}{2} \left[{\mathcal A}^2
++  ({\mathcal A}^a)^2\right],
+\label{defpo}
+\eeq
+where $\mu$ is a common mass parameter for the chiral
+superfields in \ntwo gauge supermultiplets,
+U(1) and SU($N$), respectively. The subscript 3+1 tells us that the deformation 
+superpotential (\ref{defpo}) refers to the bulk four-dimensional theory.
+
+Let us note that as was shown in \cite{Edalati,SYhet} 
+ the BPS nature of the non-Abelian string string is preserved only
+if critical points of the bulk deformation superpotential coincide with quark masses. This is related to the fact that
+if the above condition is fulfilled the only  quark scalar fields whose masses are related by \none supersymmetry
+to masses of gauge bosons are  excited on the string solution.
+Other quark fields with different masses are zero. Once 
+above condition is not satisfied these other fields are also
+become non-zero. This spoils the BPS-saturation of the string.
+
+Clearly all critical points of the superpotential (\ref{defpo})
+are equal to zero. Therefore for a generic non-zero choice of
+quark masses the above condition is not satisfied. Thus we expect
+that the BPSness of non-Abelian strings is lost. Below in
+this paper we will see how this effect is seen from the 
+perspective of the effective world sheet theory on the string. We will
+see that it manifest itself in the spontaneous breaking of 
+the \ntwoo supersymmetry in \CPC model on the string. 
+This happen already at the classical level. Note that in the massless case studied in \cite{SYhet,BSYhet} the above 
+condition is fulfilled and \ntwoo supersymmetry is preserved
+in the world sheet theory on the classical level. Still it turns
+out to be spontaneously broken by quantum effects 
+\cite{Tongd,SYhet,SYhetlN}.
+
+
+
+In the gauged formulation, the two dimensional
+\ntwoo \CPC sigma model with twisted
+masses  is given by the strong coupling limit $ e ~\to~ \infty $ of
+the following U(1) theory
+\begin{align}
+\label{sigma_full}
+% 
+\notag
+ 	\mc{L}_\text{1+1} & ~~=~~
+	-\,\frac{1}{8e^2}\,F_{RL}^2  ~+~ \frac{1}{e^2} \left|\p_k \sigma\right|^2 
+	~+~ \frac{1}{2e^2}\, D^2
+	~+~ \frac{1}{e^2}\, \blar\, i\p_L\, \lar  ~+~  \frac{1}{e^2} \blal\, i\p_R\, \lal
+	\\[2mm]
+%
+\notag
+	&
+	\hspace{-0.4cm}
+	~+~ 2\beta \biggl \lgroup
+	\left| \nabla n \right|^2  ~+~ 2 \Bigl| \sigma - 
+	\frac{m^l}{\sqrt{2}} \Bigr|^2 \left| n^l \right|^2
+	~+~ iD \left( \left|n^l \right|^2 - 1 \right)
+	\\
+%
+\notag
+	&
+	\hspace{-0.4cm}\phantom{2\beta\lgroup}
+	~+~ \bxir\, i\nabla_L \xir  ~+~ \bxil\, i\nabla_R \xil ~+~
+	i\sqrt{2}\, \Bigl( \sigma - \frac{m^l}{\sqrt{2}} \Bigr) \ov{\xi}{}_{Rl} \xi_L^l
+	~+~ i\sqrt{2}\, \Bigl( \ov{\sigma} - \frac{\ov{m}{}^l}{\sqrt{2}} \Bigr) \ov{\xi}{}_{Ll} \xi_R^l
+	\\[2mm]
+%
+	&
+	\hspace{-0.4cm}\phantom{2\beta\lgroup}
+	~+~ i\sqrt{2}\, \ov{\xi_{[R}\, \lambda}{}_{L]}\, n
+	~-~ i\sqrt{2}\, \nbar\,  \lambda_{[R}\, \xi_{L]}
+	\\[2mm]
+%
+\notag
+	&
+	\hspace{-0.4cm}\phantom{2\beta\lgroup}
+	~+~ \bzr\, i\p_L\, \zr   ~+~   \bff\, \ff
+	\\
+%
+\notag
+	&
+	\hspace{-0.4cm}\phantom{2\beta\lgroup}
+	~-~ 2i\, \frac{\p^2 \hat{\mc{W}}}{\p \sigma^2}\, \blal\, \zr
+	~-~ 2i\, \frac{\p^2 \hat{\ov{\mc{W}}}}{\p \ov{\sigma}{}^2}\, \bzr\, \lal
+	~+~ 2i\, \frac{\p \hat{\mc{W}}}{\p \sigma}\, \ff
+	~+~ 2i\, \bff\, \frac{\p \hat{\ov{\mc{W}}}}{\p \ov{\sigma}}
+	\biggr\rgroup ,
+	\\[1mm]
+%
+\notag
+	&
+	l~=~1,...\,N,
+\end{align}
+	where $ \hat{\mc{W}}(\Sigma) $ is an arbitrary \ntwot breaking superpotential function.
+	In particular, here we consider
+	  the latter to be a quadratic deformation
+\[
+	\hat{\mc{W}}(\Sigma) ~~=~~ \frac{1}{2}\, \delta\, \Sigma^2\,.
+\]
+The relation of the deformation parameter $\delta$ of the
+world sheet theory to the  parameter $\mu$
+of the  deformation superpotential (\ref{defpo}) is studied in
+\cite{SYhet,BSYhet} \footnote{Strictly speaking, this 
+relation is derived in \cite{SYhet,BSYhet} for massless
+version of the theory. Since mass deformation is rather independent of \ntwoo deformation we expect that the same 
+relation is true for the massive theory. The proof of this is
+left for a future work.}
+\beq
+\delta =
+\left\{
+\begin{array}{l}\rule{0mm}{5mm}
+ {\rm const}\;\,\frac{g_2^2\mu}{m_W}\, , \quad\qquad\;  \mbox{small}\,\,\,
+ \mu\,,\\[4mm]
+ {\rm const}\,\frac{\mu}{|\mu|}\;
+ \sqrt{\ln{\frac{g^2_2\mu}{m_W}}} \, , \qquad\, \mbox{large}\,\,\,\mu\,\, .
+ \end{array}
+ \right.
+\label{deltamu}
+\eeq
+Here $g_2^2$ is the SU($N$) gauge coupling, 
+while $m_W$ is the mass of the SU$(N)$ gauge boson of the bulk theory. The two dimensional deformation parameter is proportional to
+the bulk one at small $\mu$, while at large $\mu$ it
+acquires a logarithmic dependence.
+
+
+
+        We prove supersymmetry of the above action 
+        (\ref{sigma_full}) in two steps
+	(for now we absorb the factor of $ 2\beta $ into the definition of $ n^l $, $ \xi^l $,
+        $ \zeta_R $ and $ \mc{F} $).
+        The massive deformation and the heterotic deformation are independent of each other, as we shortly prove.
+	We can first consider the theory deformed only by twisted masses, and then add \ntwoo terms.
+        Therefore, as the first step we discard the superpotential $ \hat{\mc{W}} $.
+        Then the theory splits into two decoupled sectors --- orientational and translational one. 
+        The orientational sector (\ref{sigma22}) was 
+        already considered in the previous subsection.
+   
+	
 
 
 	The translational sector is free
@@ -397,6 +633,107 @@ the following U(1) theory
 	right-handed supersymmetry \eqref{msusy} and \eqref{tsusy}, for an arbitrary function $ \hat{\mc{W}}(\sigma) $.
 %        In doing so, one notices that when supersymmetry transformations are applied to the Lagrangian
 %	the third derivative of $ \hat{\mc{W}} $ does not arise, since $ \delta\sigma ~\propto~ \blal $.
+
+By the analogy with massive non-supersymmetric CP$(N-1)$ model
+studied in \cite{GSYphtr} in the large $N$ approximation we expect
+presence of two phases in the model (\ref{sigma_full})
+separated by a crossover transition.
+Namely, the week coupling Higgs phase at large masses and 
+the strong
+coupling phase at small masses. The detailed study of physics
+of the heterotic \CPC model (\ref{sigma_full}) is left for a future work. Here we just comment on the week coupling Higgs phase.
+
+If masses are large $|m^l|\gg \Lambda$ (where $\Lambda$ is
+a scale of the worldsheet theory) the coupling constant
+$\beta$ is frozen at the scale of order of $|m^l|$.
+The theory is in the weak coupling regime and can be studied
+perturbatively. We have $N$ vacua in each of them VEV of
+$n^l$ is given by
+\beq
+\langle n^l \rangle =\delta^{ll_0}, \qquad l_0=1,...,N.
+\label{higgsn}
+\eeq
+As follows from (\ref{sigma_full}), in order to find VEV of $\sigma$ in the $l_0$-th vacuum we have to minimize the following potential
+\beq
+2\left|\sigma -\frac{m^{l_0}}{\sqrt{2}}\right|^2 
++4|\delta|^2\,|\sigma|^2.
+\label{sigmapot}
+\eeq
+This gives
+\beq
+\langle \sigma \rangle = \frac{m^{l_0}}{\sqrt{2}}\,
+\frac{1}{1+2|\delta|^2}.
+\label{higgssigma}
+\eeq
+
+Substituting this back into the potential (\ref{sigma_full})
+we get the vacuum energy and masses of $(N-1)$
+elementary fields $n^l$ and $\xi^l$ ($l\neq l_0$). We have
+\begin{align}
+%
+\notag
+	E_\text{vac}~~\;\, & ~~=~~ |\gamma|^2\, |m^{l_0}|^2 \,,
+	\\
+%
+\label{hetmass}
+	M_\text{ferm}^l\;\,\, & ~~=~~ m^l ~-~ m^{l_0} ~+~ |\gamma|^2\,m^{l_0} \,,
+	\\
+%
+\notag
+	| M_\text{bos}^l |^2 & ~~=~~ | M_\text{ferm}^l |^2 ~-~ |\gamma|^4\, |m^{l_0}|^2\,,
+	\qquad\qquad
+	l\neq l_0,
+\end{align}
+where we introduced a new parameter $\gamma$ via relation
+\beq
+\frac{1}{1+2|\delta|^2}\equiv 1-|\gamma|^2.
+\label{gammadelta}
+\eeq
+
+	Although neither the twisted mass deformation, nor the heterotic deformation by themselves
+	do not break supersymmetry completely, when combined, they lead to the spontaneous \ntwoo supersymmetry breaking
+	already at the classical level.
+ Namely, for non-zero masses 
+in each of the Higgs vacua
+the vacuum energy is non-zero and the boson masses are different from masses of their fermion superpartners. As we explained
+above this is in accord with our expectations which follow
+from the bulk theory picture.
+
+	In particular, in the special case where all the masses sit on a circle, 
+\[
+	m^l ~~=~~ m \cdot e^{2\pi l/N}\,, \qquad\qquad\qquad  l ~=~ 1,...\, N\,,
+\]
+	the $ N $ vacua become degenerate.
+
+	Note that supersymmetry restores if one of the masses vanishes or $ \gamma $ is set to zero.
+	When one of the masses vanishes, the corresponding vacuum becomes supersymmetric,
+	Eq.~\eqref{hetmass},
+\[
+	m^{l_0} ~~=~~ 0  \qquad \Rightarrow \qquad E_\text{vac}^{l_0} ~~=~~ 0\,, \qquad\qquad l_0 ~=~ 1,...\,N\,.
+\]
+	The theory then becomes a heterotic \CPC model with $ N - 1 $ twisted mass parameters.
+
+	When $ \gamma = 0 $, however, all $ N $ vacua become supersymmetric.
+	The heterotic deformation is switched off and one is brought back to a \ntwot CP($N-1$) model
+	with a twisted-mass deformation.
+	Although formally there are $ N $ twisted mass parameters, it is well-known that the theory 
+	has only $ N - 1 $ physical parameters, more precisely the mass differences
+\[
+	M_\text{bos}^i ~~=~~ M_\text{ferm}^i ~~=~~ m^i ~-~ m^{l_0}\,.
+\]
+	This can be seen already from the Lagrangian \eqref{sigma_full}, when $ \hat{\mc{W}} ~=~ 0 $. 
+	Indeed, in this case there is a freedom of changing $ \sigma $ by an additive constant, 
+	$ \sigma ~\to~ \sigma ~-~ M/\sqrt{2} $, simultaneously with shifting the masses, $ m^l ~\to~ m^l ~-~ M $, 
+	which effectively decreases the number of mass parameters.
+
+	This is no longer the case when the heterotic deformation is turned back on $ \hat{\mc{W}}(\sigma) ~\neq~ 0 $,
+	the shift of $ \sigma $ is no longer a symmetry of the theory.
+	There are $ N $ twisted mass parameters all of which are physical. 
+	In particular, in each Higgs vacuum at weak coupling, $ N - 1 $ parameters define masses of excitations, while one parameter determines
+	the vacuum energy.
+
+
+
 
         To compare the massive heterotic theory in the gauged sigma model formulation to
         the one in the geometric formulation, we need to exclude all auxiliary fields from the model.
@@ -543,74 +880,22 @@ the following U(1) theory
 	\qquad\qquad\qquad
 	i ~=~ 1,...\,N-1\,.
 \]
-	We have excluded the field $ n^N $ completely, while we still left $ \xi^N $ in some places,
-	few enough so we can recover the masses of the physical fields. 
-	The first three lines of Eq.~\eqref{sigma_mass} display the scalar potential of the theory,
-	the fourth line shows the fermionic mass terms, while the rest of the terms are 
-	fermionic interactions.
 
-	From Eq.~\eqref{sigma_mass} one easily reads off the masses of the physical fields
-	and the vacuum energy:
-\begin{align}
-%
-\notag
-	E_\text{vac}~~\;\, & ~~=~~ |\gamma|^2\, |m^N|^2 \,,
-	\\
-%
-\label{hetmass}
-	M_\text{ferm}^i\;\,\, & ~~=~~ m^i ~-~ m^N ~+~ |\gamma|^2\,m^N \,,
-	\\
-%
-\notag
-	| M_\text{bos}^i |^2 & ~~=~~ | M_\text{ferm}^i |^2 ~-~ |\gamma|^4\, |m^N|^2\,,
-	\qquad\qquad
-	i ~=~ 1,...\, N-1\,.
-\end{align}
-	Although neither the twisted mass deformation, nor the heterotic deformation by themselves
-	do not break supersymmetry completely, when combined, they lead to supersymmetry breaking
-	already at the classical level.
-	We have chosen to eliminate variable $n^N$, but in general it could have been any of the $n^l$.
-	Hence the vacuum energy equals to $ |\gamma|^2\, |m^l|^2 $, with $ l = 1,...\, N $ labeling the 
-	corresponding vacuum.
-	In particular, in the special case where all the masses sit on a circle, 
-\[
-	m^l ~~=~~ m \cdot e^{2\pi l/N}\,, \qquad\qquad\qquad  l ~=~ 1,...\, N\,,
-\]
-	the $ N $ vacua become degenerate.
+Note, that at large values of $m^l$ all $N$ Higgs vacua (\ref{higgsn}) of the theory  are
+still present in the potential (\ref{sigma_mass}).
+One of them with $l_0=N$ located at $n^i=0$, $i=1,...,(N-1)$
+is easily seen from (\ref{sigma_mass}). Vacuum energy,
+masses of fermion and boson elementary excitations match
+expression (\ref{hetmass}) for $l_0=0$. Other $(N-1)$
+vacua are still present, but not-so-easy to see from (\ref{sigma_mass}).
+They are located at $n^{l_0}=1$, $l_0=1,...,(N-1)$.
 
-	Note that supersymmetry restores if one of the masses vanishes or $ \gamma $ is set to zero.
-	When one of the masses vanishes, the corresponding vacuum becomes supersymmetric,
-	Eq.~\eqref{hetmass},
-\[
-	m^l ~~=~~ 0  \qquad \Rightarrow \qquad E_\text{vac}^l ~~=~~ 0\,, \qquad\qquad l ~=~ 1,...\,N\,.
-\]
-	The theory then becomes a heterotic \CPC model with $ N - 1 $ twisted mass parameters.
+One can easily see these vacua from different equivalent formulations of the theory which emerge if  we choose to eliminate
+field $n^{l_0}$ rather then $n^N$. We stress however, that
+all $N$ vacua are, in principle, seen from any of these
+equivalent formulations and supersymmetry breaking is spontaneous
+rather then explicit.
 
-	When $ \gamma = 0 $, however, all $ N $ vacua become supersymmetric.
-	The heterotic deformation is switched off and one is brought back to a \ntwot CP($N-1$) model
-	with a twisted-mass deformation.
-	Although formally there are $ N $ twisted mass parameters, it is well-known that the theory 
-	has only $ N - 1 $ physical parameters, more precisely the mass differences
-\[
-	M_\text{bos}^i ~~=~~ M_\text{ferm}^i ~~=~~ m^i ~-~ m^N\,.
-\]
-	This can be seen already from the Lagrangian \eqref{sigma_full}, when $ \hat{\mc{W}} ~=~ 0 $. 
-	Indeed, in this case there is a freedom of changing $ \sigma $ by an additive constant, 
-	$ \sigma ~\to~ \sigma ~-~ M/\sqrt{2} $, simultaneously with shifting the masses, $ m^l ~\to~ m^l ~-~ M $, 
-	which effectively decreases the number of mass parameters.
-
-	This is no longer the case when the heterotic deformation is turned back on $ \hat{\mc{W}}(\sigma) ~\neq~ 0 $,
-	the shift of $ \sigma $ is no longer a symmetry of the theory.
-	There are $ N $ twisted mass parameters all of which are physical. 
-	In each vacuum, $ N - 1 $ parameters define masses of excitations, while one parameter determines
-	the vacuum energy.
-
-	All these vacua are necessarily Higgs vacua, and one has to take the masses large enough
-	$ m^l \gg \Lambda $ in order to study them.
-	In principle, there is also a strong-coupling phase in this theory, but it cannot
-	be seen in the approach of Eq.~\eqref{sigma_mass}, nor can it be seen in the geometric formulation
-	of the theory, which we are passing on to.	
-	The problem of the strong-coupling phase is left for future work.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -819,7 +1104,7 @@ The Lagrangian of the CP($N-1$) model is given by the following sigma model
 	K ~~=~~ \ln \lgr 1 ~+~ \ov{X}{}^i X^i \rgr\,.
 \]
 	It turns out that in the above integral one can freely replace $ D_\alpha $ and $ \ov{D}{}_\alpha $ with
-	covariant $ \nabla^{(\bj)}_\alpha $ and $ \ov{\nabla}{}^{(i)}_\alpha $ at any convenient occurence.
+	covariant $ \nabla^{(\bj)}_\alpha $ and $ \ov{\nabla}{}^{(i)}_\alpha $ at any convenient occurrence.
 	This makes calculation of \eqref{Ltw} straightforward, and the only obvious difference with the massless
 	case comes from the algebra of the covariant derivatives $ \nabla^{(\bj)}_\alpha $ and 
 	$ \ov{\nabla}{}^{(i)}_\alpha $, {\it i.e.} from the presence of the constant gauge fields.
@@ -1199,13 +1484,25 @@ $,
 	\qquad\qquad
 	i ~=~ 1,...\,N-1\,.
 \end{align*}
-	We observe that all the masses, the vacuum energy and other massive terms match exactly
+	We observe that this Lagrangian matches exactly
 	onto the gauge formulation of the heterotic massive sigma model \eqref{sigma_mass}, provided that
 	we accept
 \[
 	m_G^i ~~=~~ m^i ~-~ m^N \,.
 \]
-	As we noted, the theory \eqref{geom_mass} describes excitations around the $N$-th vacuum.
+
+As an additional check we now show that in the 
+large  mass limit $|m^l|\gg \Lambda$ we can
+recover all $N$ Higgs vacua (\ref{higgsn}) obtained in
+gauge formulation from the geometric formulation (\ref{geom_mass}). One of these vacua with $l_0=N$ corresponds
+to $\phi^i=0$. Other $(N-1)$ vacua located at $\phi^{l_0}\to\infty$, $l_0=1,...,(N-1)$ as it is seen from 
+(\ref{stereo}). Vacuum energies, boson and fermion masses 
+in these vacua exactly match expressions (\ref{hetmass})
+obtained in the gauge formulation.
+
+
+
+%	As we noted, the theory \eqref{geom_mass} describes %excitations around the $N$-th vacuum.
 
 	While it took us some effort to prove \ntwoo supersymmetry of the theory \eqref{sigma_full},
 	the geometric formulation of this theory 
@@ -1221,6 +1518,18 @@ $,
 	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \bgamma\, \ov{m}{}^N\, \ov{\mc{B}}
 \end{align*}
 	is manifestly supersymmetric.
+	
+	
+\section{Conclusions}
+	
+	
+\section*{Acknowledgments}
+This work  is supported in part by DOE grant DE-FG02-94ER408. 
+The work of A.Y. was  supported 
+by  FTPI, University of Minnesota, 
+by RFBR Grant No. 09-02-00457a 
+and by Russian State Grant for 
+Scientific Schools RSGSS-11242003.2.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1262,9 +1571,164 @@ $,
   J.\ Phys.\ A  {\bf 39}, 13005 (2006)
   [arXiv:hep-th/0602004].
   %%CITATION = JPAGB,A39,13005;%%
+  
+     
+   
+
+\bibitem{HT1}
+A.~Hanany and D.~Tong,
+%``Vortices, instantons and branes,''
+JHEP {\bf 0307}, 037 (2003)
+[hep-th/0306150].
+%%CITATION = HEP-TH 0306150;%%
+
+\bibitem{ABEKY}
+R.~Auzzi, S.~Bolognesi, J.~Evslin, K.~Konishi and A.~Yung,
+%{\em Non-Abelian superconductors: Vortices and confinement in N = 2
+%SQCD,}
+Nucl.\ Phys.\ B {\bf 673}, 187 (2003)
+[hep-th/0307287].
+%%CITATION = HEP-TH 0307287;%%
+
+ \bibitem{SYmon}
+M.~Shifman and A.~Yung,
+%``Non-Abelian string junctions as confined monopoles,''
+Phys.\ Rev.\ D {\bf 70}, 045004 (2004)
+[hep-th/0403149].
+%%CITATION = HEP-TH 0403149;%%
+
+\bibitem{HT2}
+A.~Hanany and D.~Tong,
+%``Vortex strings and four-dimensional gauge dynamics,''
+JHEP {\bf 0404}, 066 (2004)
+[hep-th/0403158].
+%%CITATION = HEP-TH 0403158;%%
+
+\bibitem{Trev}
+D.~Tong,
+{\em TASI Lectures on Solitons,}
+  arXiv:hep-th/0509216.
+  %%CITATION = HEP-TH/0509216;%%
+  
+\bibitem{SYrev}
+M.~Shifman and A.~Yung,
+%{\sl Supersymmetric Solitons,}
+Rev.\ Mod.\ Phys. {\bf 79} 1139 (2007)
+[arXiv:hep-th/0703267].
+  %%CITATION = HEP-TH/0703267;%%
+M.~Shifman and A.~Yung,
+{\sl Supersymmetric Solitons,}
+Cambridge University Press, 2009
+ 
+\bibitem{Jrev}
+  M.~Eto, Y.~Isozumi, M.~Nitta, K.~Ohashi and N.~Sakai,
+  %``Solitons in the Higgs phase: The moduli matrix approach,''
+  J.\ Phys.\ A  {\bf 39}, R315 (2006)
+  [arXiv:hep-th/0602170].
+  %%CITATION = JPAGB,A39,R315;%%
+   
+\bibitem{Trev2}
+D.~Tong,
+{\em Quantum Vortex Strings: A Review,}
+  arXiv:0809.5060 [hep-th].
+  %%CITATION = ARXIV:0809.5060;%%
+  
+
+
+
+ \bibitem{SYhetlN}
+M.~Shifman and A.~Yung,
+%''Large-N Solution of the Heterotic N=(0,2) Two-Dimensional CP(N-1) Model''
+Phys.\ Rev.\ D {\bf 77}, 125017 (2008)
+[arXiv:hep-th/0803.0698].
+%%CITATION = HEP-TH 0803.0698;%%
+
+\bibitem{W79}
+E.~Witten,
+%``Instantons, The Quark Model, And The 1/N Expansion,''
+Nucl.\ Phys.\ B {\bf 149}, 285 (1979).
+%%CITATION = NUPHA,B149,285;%%
+
+
+\bibitem{Tohetdyn}
+  D.~Tong,
+  %``The quantum dynamics of heterotic vortex strings,''
+  JHEP {\bf 0709}, 022 (2007)
+  [arXiv:hep-th/0703235].
+  %%CITATION = JHEPA,0709,022;%%
+
+
+  
+\bibitem{HaHo}
+A.~Hanany and K.~Hori,
+  %``Branes and N = 2 theories in two dimensions,''
+  Nucl.\ Phys.\  B {\bf 513}, 119 (1998)
+  [arXiv:hep-th/9707192].
+  %%CITATION = NUPHA,B513,119;%%
+  
+\bibitem{Dorey}
+N.~Dorey,
+%``The BPS spectra of two-dimensional
+%supersymmetric gauge theories
+%with  twisted mass terms,''
+JHEP {\bf 9811}, 005 (1998) [hep-th/9806056].
+%%CITATION = HEP-TH 9806056;%%
+
+\bibitem{Tongd}
+  D.~Tong,
+  %``The quantum dynamics of heterotic vortex strings,''
+  JHEP {\bf 0709}, 022 (2007)
+  [arXiv:hep-th/0703235].
+  %%CITATION = JHEPA,0709,022;%%
+  
+\bibitem{GSYphtr}
+A.~Gorsky, M.~Shifman and A.~Yung,
+%``Higgs and Coulomb/confining phase in ``twisted-mass'' deformed $CP(N-1)$ model''
+ Phys.\ Rev.\  D {\bf 73}, 065011 (2006)
+  [hep-th/0512153].
+  %%CITATION = PHRVA,D73,065011;%%
 
 
 \end{thebibliography}
 
 
 \end{document}
+
+
+	We have excluded the field $ n^N $ completely, while we still left $ \xi^N $ in some places,
+	few enough so we can recover the masses of the physical fields. 
+	The first three lines of Eq.~\eqref{sigma_mass} display the scalar potential of the theory,
+	the fourth line shows the fermionic mass terms, while the rest of the terms are 
+	fermionic interactions.
+
+	From Eq.~\eqref{sigma_mass} one easily reads off the masses of the physical fields
+	and the vacuum energy:
+\begin{align}
+%
+\notag
+	E_\text{vac}~~\;\, & ~~=~~ |\gamma|^2\, |m^N|^2 \,,
+	\\
+%
+\label{hetmass}
+	M_\text{ferm}^i\;\,\, & ~~=~~ m^i ~-~ m^N ~+~ |\gamma|^2\,m^N \,,
+	\\
+%
+\notag
+	| M_\text{bos}^i |^2 & ~~=~~ | M_\text{ferm}^i |^2 ~-~ |\gamma|^4\, |m^N|^2\,,
+	\qquad\qquad
+	i ~=~ 1,...\, N-1\,.
+\end{align}
+	Although neither the twisted mass deformation, nor the heterotic deformation by themselves
+	do not break supersymmetry completely, when combined, they lead to supersymmetry breaking
+	already at the classical level.
+	We have chosen to eliminate variable $n^N$, but in general it could have been any of the $n^l$.
+	Hence the vacuum energy equals to $ |\gamma|^2\, |m^l|^2 $, with $ l = 1,...\, N $ labeling the 
+	corresponding vacuum.
+
+	All these vacua are necessarily Higgs vacua, and one has to take the masses large enough
+	$ m^l \gg \Lambda $ in order to study them.
+	In principle, there is also a strong-coupling phase in this theory, but it cannot
+	be seen in the approach of Eq.~\eqref{sigma_mass}, nor can it be seen in the geometric formulation
+	of the theory, which we are passing on to.	
+	The problem of the strong-coupling phase is left for future work.
+
