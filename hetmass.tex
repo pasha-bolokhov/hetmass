@@ -7,7 +7,7 @@
 \usepackage{geometry}
 \geometry{letterpaper}
 
-\usepackage{showlabels}
+%\usepackage{showlabels}
 
 \textwidth = 6.0 in
 \textheight = 8.5 in
@@ -134,7 +134,8 @@
 \newcommand{\blarl}{\ov{\lambda}{}_{R,L}}
 \newcommand{\blalr}{\ov{\lambda}{}_{L,R}}
 
-\newcommand{\bgamma}{\ov{\gamma}}
+\newcommand{\tgamma}{\wt{\gamma}}
+\newcommand{\btgamma}{\ov{\tgamma}}
 \newcommand{\bpsi}{\ov{\psi}{}}
 \newcommand{\bphi}{\ov{\phi}{}}
 \newcommand{\bxi}{\ov{\xi}{}}
@@ -306,7 +307,11 @@ This is the origin of the alternative name,
   
   Our findings can be summarized as follows. If the \ntwot model with twisted masses
   contains $N-1$ free mass parameters, its heterotic deformation allows one to introduce two rather than one 
-  extra complex parameters. One of them is obvious: a complex coupling ($\delta$ or $\gamma$, see below)
+  extra complex parameters. One of them is obvious: 
+a complex coupling ($\delta$ or $\tgamma$, see below\footnote{
+In this paper we denote the parameter of deformation of the heterotic worldsheet by $\tgamma$ 
+which is related to the analogous parameter $\gamma$ originally introduced in \cite{SYhet}, as
+$ \tgamma ~=~ \sqrt{2/\beta}\, \gamma $.})
  regulating the strength of the heterotic deformation. The second complex parameter is less obvious,
  being an extra mass parameter. It turns out that the set of twisted masses
  in the heterotic version has $N$ complex mass parameters rather than $N-1$.
@@ -669,9 +674,10 @@ $ \hat{\mc{W}}(\Sigma) $ to be   quadratic,
 \[
 	\hat{\mc{W}}(\Sigma) ~~=~~ \frac{1}{2}\, \delta\, \Sigma^2\,.
 \]
-The deformation parameter $\delta$ (as well as $\gamma$ appearing below)
-was introduced 
-in \cite{SYhet}.\footnote{The relation  $\delta$ of the
+The deformation parameter $\delta$ 
+%(as well as $ \gamma = \sqrt{\beta/2}\, \tgamma$, where 
+%$\tgamma$ appears below) 
+was introduced in \cite{SYhet}.\footnote{The relation  $\delta$ of the
 world-sheet theory to the  parameter $\mu$
 in the four-dimensional  superpotential (\ref{defpo}) was studied in
 \cite{SYhet,BSYhet}. To be more exact, this 
@@ -728,7 +734,7 @@ As the first step, we discard the superpotential $ \hat{\mc{W}} $.
 	The \ntwot fields that mix with the translational sector by means
 	of $ \hat{\mc{W}} $ are $ \lambda_L $ and $ \sigma $.
 	The supertransformations of the latter do not involve the masses $ m^l $, 
-	e.g $ \delta\sigma = -\sqrt{2}
+	{\it e.g.} $ \delta\sigma = -\sqrt{2}
                               \left( \eer\, \blal ~-~ \beel\,\lar \right)$, 
                               see Eq.~\eqref{msusy}.
 As a result,  the heterotic deformation and the twisted-mass deformation are indeed independent
@@ -787,21 +793,21 @@ elementary fields $n^l$ and $\xi^l$ ($l\neq l_0$). We have,
 \begin{align}
 %
 \notag
-	E_\text{vac}~~\;\, & ~~=~~ |\gamma|^2\, |m^{l_0}|^2 \,,
+	E_\text{vac}~~\;\, & ~~=~~ |\tgamma|^2\, |m^{l_0}|^2 \,,
 	\\[2mm]
 %
 \label{hetmass}
-	M_\text{ferm}^l\;\,\, & ~~=~~ m^l ~-~ m^{l_0} ~+~ |\gamma|^2\,m^{l_0} \,,
+	M_\text{ferm}^l\;\,\, & ~~=~~ m^l ~-~ m^{l_0} ~+~ |\tgamma|^2\,m^{l_0} \,,
 	\\[2mm]
 %
 \notag
-	| M_\text{bos}^l |^2 & ~~=~~ | M_\text{ferm}^l |^2 ~-~ |\gamma|^4\, |m^{l_0}|^2\,,
+	| M_\text{bos}^l |^2 & ~~=~~ | M_\text{ferm}^l |^2 ~-~ |\tgamma|^4\, |m^{l_0}|^2\,,
 	\qquad\qquad
 	l\neq l_0,
 \end{align}
-where we introduced a new parameter $\gamma$ via the relation
+where we introduced a new parameter $\tgamma$ via the relation
 \beq
-\frac{1}{1+2|\delta|^2}\equiv 1-|\gamma|^2.
+\frac{1}{1+2|\delta|^2}\equiv 1-|\tgamma|^2.
 \label{gammadelta}
 \eeq
 
@@ -828,7 +834,7 @@ from the bulk theory picture. In particular, in the special case in which all $N
 \]
 	The theory then becomes a heterotic \CPC model with $ N - 1 $ twisted mass parameters.
 
-	When $ \gamma = 0 $,   all $ N $ vacua become supersymmetric.
+	When $ \tgamma = 0 $,   all $ N $ vacua become supersymmetric.
 	The heterotic deformation is switched off,
 	 and one returns to the twisted-mass deformed \ntwot CP($N-1$) model.
 	Although formally there are $ N $ twisted mass parameters, it is well-known that the theory 
@@ -838,10 +844,10 @@ from the bulk theory picture. In particular, in the special case in which all $N
 \]
 enter the spectrum and all other physical
 quantities. This can be clearly seen from 
-Eq.~(\ref{hetmass}) at $\gamma =0$. This circumstance is in one-to-one correspondence
+Eq.~(\ref{hetmass}) at $\tgamma =0$. This circumstance is in one-to-one correspondence
 with the $\sigma$-shift symmetry of 
 the Lagrangian \eqref{sigma22}. Thus, passing
-to the heterotic model we acquire not only the heterotic coupling $\delta$ or $\gamma$,
+to the heterotic model we acquire not only the heterotic coupling $\delta$ or $\tgamma$,
 but, in addition, one ``extra" mass parameter.
 	
         To compare the massive heterotic theory in the gauged  formulation to
@@ -869,9 +875,11 @@ the constraint  by performing a shift of the superorientational variable $ \xir 
 	This obviously changes the normalization of the kinetic term for $ \zr $, which we
 	bring back to its canonical form by rescaling $ \zr $,
 \[
-	\zr ~~\to~~ \frac{1}{1 + 2|\delta|^2}\,\zr ~~\equiv~~ ( 1 - |\gamma|^2 )\, \zr\,.
+	\zr ~~\to~~ \frac{1}{1 + 2|\delta|^2}\,\zr ~~\equiv~~ ( 1 - |\tgamma|^2 )\, \zr\,.
 \]
-As a result of all these transformations,  the following theory emerges:
+As a result of all these transformations,  the following theory emerges\footnote{Note that in 
+this paper $ \tgamma ~=~ \sqrt{2/\beta}\,\gamma $, where 
+$\gamma$ was introduced in \cite{SYhet}.}:
 \begin{align}
 %
 \notag
@@ -886,13 +894,13 @@ As a result of all these transformations,  the following theory emerges:
 %
 \notag
 	&~
-	~-~ \gamma\, i\p_L\nbar \xir\, \zr ~-~ \ov{\gamma}\, \bxir i\p_L n\, \bzr
-	~+~ |\gamma|^2\, \bxil \xil\, \bzr \zr
+	~-~ \tgamma\, i\p_L\nbar \xir\, \zr ~-~ \ov{\tgamma}\, \bxir i\p_L n\, \bzr
+	~+~ |\tgamma|^2\, \bxil \xil\, \bzr \zr
 	\\[3mm]
 %
 \label{sigma_phys}
 	&~
-	~+~ (1-|\gamma|^2)\,\bxil\xir\,\bxir\xil ~-~ \bxir\xir\,\bxil\xil
+	~+~ (1-|\tgamma|^2)\,\bxil\xir\,\bxir\xil ~-~ \bxir\xir\,\bxil\xil
 	\\[3mm]
 %	
 \notag
@@ -903,13 +911,13 @@ As a result of all these transformations,  the following theory emerges:
 %
 \notag
 	&~
-	~-~ i\gamma\, m^l\, \ov{n}{}_l \xi_L^l\, \zr 
-	~+~ i\ov{\gamma}\, \ov{m}{}^l\, \ov{\xi}{}_{Ll} n^l\, \bzr
+	~-~ i\tgamma\, m^l\, \ov{n}{}_l \xi_L^l\, \zr 
+	~+~ i\ov{\tgamma}\, \ov{m}{}^l\, \ov{\xi}{}_{Ll} n^l\, \bzr
 	\\[2mm]
 %
 \notag
 	&~
-	~-~ (1-|\gamma|^2)
+	~-~ (1-|\tgamma|^2)
 	\lgr \left|\sum m^l |n^l|^2 \right|^2 
 		~-~ i m^l\, |n^l|^2 (\bxir\xil) ~-~ i\ov{m}{}^l\, |n^l|^2(\bxil\xir)
 	\rgr ,
@@ -923,7 +931,7 @@ As a result of all these transformations,  the following theory emerges:
 	Note that in Eq. \eqref{sigma_full} the massive deformation and the heterotic deformation
 	were independent from each other, and we used this
 	circumstance to prove supersymmetry.
-	Now we see that some terms in Eq.~\eqref{sigma_phys}  depend both on $\gamma$ and
+	Now we see that some terms in Eq.~\eqref{sigma_phys}  depend both on $\tgamma$ and
 	$m^l$.
 	This happens because we have integrated out the auxiliary fields, implying, in turn,  
  that supersymmetry is now realized nonlinearly 
@@ -946,43 +954,43 @@ Our current task is to more closely examine  the mass terms in Eq.~\eqref{sigma_
 \begin{align}
 %
 \notag
-	\mc{L} & ~~\supset~~ 
-	|\gamma|^2\, |m^N|^2  
+	\frac{\mc{L}}{2\beta} & ~~\supset~~ 
+	|\tgamma|^2\, |m^N|^2  
 	\\
 %
 \notag
 	&~
 	~+~
-	\lgr | m^i - m^N + |\gamma|^2 m^N |^2 ~-~ |\gamma|^4\, |m^N|^2 \rgr\, |n^i|^2 
+	\lgr | m^i - m^N + |\tgamma|^2 m^N |^2 ~-~ |\tgamma|^4\, |m^N|^2 \rgr\, |n^i|^2 
 	\\
 %
 \notag
 	&~
-	~-~ (1 - |\gamma|^2)\, \Bigl|\sum_i\, (m^i - m^N)\,|n^i|^2 \Bigr|^2
+	~-~ (1 - |\tgamma|^2)\, \Bigl|\sum_i\, (m^i - m^N)\,|n^i|^2 \Bigr|^2
 	\\
 %	
 \label{sigma_mass}
 	&~
-	~-~ i\,(m^i - m^N + |\gamma|^2 m^N )\,\ov{\xi}{}_{Ri}\,\xi_L^i
-	~-~ i\,(\ov{m}{}^i - \ov{m}{}^N + |\gamma|^2\ov{m}{}^N)\, \ov{\xi}{}_{Li}\, \xi_R^i 
+	~-~ i\,(m^i - m^N + |\tgamma|^2 m^N )\,\ov{\xi}{}_{Ri}\,\xi_L^i
+	~-~ i\,(\ov{m}{}^i - \ov{m}{}^N + |\tgamma|^2\ov{m}{}^N)\, \ov{\xi}{}_{Li}\, \xi_R^i 
 	\\[3mm]
 %
 \notag
 	&~
-	~+~ i\,(1-|\gamma|^2)\,(m^i - m^N)\,|n^i|^2(\bxir\,\xil) 
-	~+~ i\,(1-|\gamma|^2)\,(\ov{m}{}^i - \ov{m}{}^N)\,|n^i|^2(\bxil\,\xir)
+	~+~ i\,(1-|\tgamma|^2)\,(m^i - m^N)\,|n^i|^2(\bxir\,\xil) 
+	~+~ i\,(1-|\tgamma|^2)\,(\ov{m}{}^i - \ov{m}{}^N)\,|n^i|^2(\bxil\,\xir)
 	\\[3mm]
 %
 \notag
 	&~
-	~-~ i \gamma\, (m^i - m^N)\, \ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i \ov{\gamma}\, (\ov{m}{}^i - \ov{m}{}^N)\, \ov{\xi}{}_{Li}\, n^i\, \bzr
+	~-~ i \tgamma\, (m^i - m^N)\, \ov{n}{}_i\, \xi_L^i\, \zr
+	~+~ i \ov{\tgamma}\, (\ov{m}{}^i - \ov{m}{}^N)\, \ov{\xi}{}_{Li}\, n^i\, \bzr
 	\\[3mm]
 %
 \notag
 	&~
-	~-~ i |\gamma|^2\, m^N\, \ov{\xi}{}_{RN}\, \xi_L^N
-	~-~ i |\gamma|^2\, \ov{m}^N\, \ov{\xi}{}_{LN}\, \xi_R^N\,,
+	~-~ i |\tgamma|^2\, m^N\, \ov{\xi}{}_{RN}\, \xi_L^N
+	~-~ i |\tgamma|^2\, \ov{m}^N\, \ov{\xi}{}_{LN}\, \xi_R^N\,,
 	\qquad\qquad
 	i ~=~ 1,...\,N-1\,,
 \end{align}
@@ -1015,22 +1023,6 @@ rather than explicit.
 \section{Geometric Formulation}
 \label{geomf}	
 \setcounter{equation}{0}
-
-
-NOTE: THERE IS A MISMATCH BETWEEN THE DEFINITION OF GAMMA
-IN THIS PAPER AND IN OUR FIRST PAPER WITH ALESHA.
-IN THIS PAPER THE COUPLING CONSTANT BETA
-seemingly  IS INCLUDED IN THE KALER POTENTIAL K
-(however, I do not see it in expressions before (3.1)
-and after (3.1) ar all!)
-WHIILE IN OUR PAPER WITH ALESHA $1/g^2$ WAS SINGLED OUT.
-THEREFORE, GAMMAS IN  THESE TWO PAPERS to my mind DIFFER BY
-$g^2$, which is not good. I'd prefer
-the normalization of our paper with Alesha.
-In this normalization gamma is not renormalized by $\phi$ loops. MISHA
-
-=======!!!!!!!!!!!!!
-
 	
 	The \ntwoo supersymmetric CP($N-1$) model   with heterotic and twisted-mass deformations has  a geometric description which combines elements of
 	the  description of the twisted-mass deformed
@@ -1044,7 +1036,8 @@ In the gauge formulation of this model one has two sets of $ N - 1 $ (anti)chira
 	manifold.
 The Lagrangian of the CP($N-1$) model is given by the following sigma model
 \[
-	\mc{L} ~~=~~ \int\, d^4\theta\, K(\Phi,\ov{\Phi}) ~~=~~ g_{i\bj}\,\p_\mu \phi^i \p_\mu\ov{\phi}{}^\bj
+	\mc{L}
+	  ~~=~~ \int\, d^4\theta\, K(\Phi,\ov{\Phi}) ~~=~~ g_{i\bj}\,\p_\mu \phi^i \p_\mu\ov{\phi}{}^\bj
 		~+~ \frac{1}{2}\, g_{i\bj}\, \psi^i\, i\overleftrightarrow{\slashed{\nabla}} \ov{\psi}{}^\bj 
 		~+~ \frac{1}{4}\, R_{ij\bk\bl}\, \psi^i\psi^j \ov{\psi}{}^\bk \ov{\psi}{}^\bl~,
 \]
@@ -1118,18 +1111,23 @@ The Lagrangian of the CP($N-1$) model is given by the following sigma model
 One then constructs the heterotic Lagrangian
 \beq
 \label{exte}
-	\mc{L}_{(0,2)} ~~=~~ \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}) 
+	\mc{L}_{(0,2)} ~~=~~ \frac{2}{g_0^2} \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \gamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\gamma}\,\ov{\mc{B}}\,\ov{K} \rgr,
+		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr,
 \eeq
 	which obviously respects the invariance on the target space CP($N-1$).
+	Here
+\[	
+	\frac{2}{g_0^2} ~~=~~ 2 \beta
+\]
+	is the coupling constant of the sigma model.
 	The second term in Eq.~\eqref{exte} generates the kinetic term for $ \zr $, while the last two terms 
 	are responsible for the mixing between $ \zr $ and $ \xi_{R,L} $.
 	Explicitly, in components, one has,
 \begin{align}
 %
 \notag
-	\mc{L}_{(0,2)} & ~~=~~  \bzr\, i\p_L\, \zr 
+	\frac{\mc{L}_{(0,2)}}{2\beta} & ~~=~~  \bzr\, i\p_L\, \zr 
 			~+~ g_{i\bj}\,\p_\mu \phi^i \p_\mu\ov{\phi}{}^\bj
 			~+~ \frac{1}{2}\, g_{i\bj}\, \psi^i_R\, i\overleftrightarrow{\nabla}{}_{\!\!L} \ov{\psi}{}^\bj_R 
 			~+~ \frac{1}{2}\, g_{i\bj}\, \psi^i_L\, i\overleftrightarrow{\nabla}{}_{\!\!R} \ov{\psi}{}^\bj_L 
@@ -1137,20 +1135,28 @@ One then constructs the heterotic Lagrangian
 %
 \label{cpn-1g}
 			& 
-			~~-~~ \gamma\, g_{i\bj}\, (i \p_L \ov{\phi}{}^\bj)\, \psi_R^i\, \zr
-			~-~ \ov{\gamma}\, g_{i\bj}\, \ov{\psi}{}_R^\bj (i \p_L \phi^i)\, \bzr
-			~+~ |\gamma|^2\, \bzr\,\zr \cdot ( g_{i\bj}\, \ov{\psi}{}_L^\bj\, \psi_L^i )
+			~~-~~ \tgamma\, g_{i\bj}\, (i \p_L \ov{\phi}{}^\bj)\, \psi_R^i\, \zr
+			~-~ \ov{\tgamma}\, g_{i\bj}\, \ov{\psi}{}_R^\bj (i \p_L \phi^i)\, \bzr
+			~+~ |\tgamma|^2\, \bzr\,\zr \cdot ( g_{i\bj}\, \ov{\psi}{}_L^\bj\, \psi_L^i )
 	\\[3mm]
 %
 \notag
 			& 
-			~~+~~ (1 \!-\! |\gamma|^2)\, (g_{i\bk}\, \ov{\psi}{}_R^\bk\, \psi_L^i)\,
+			~~+~~ (1 \!-\! |\tgamma|^2)\, (g_{i\bk}\, \ov{\psi}{}_R^\bk\, \psi_L^i)\,
 						     (g_{j\bl}\, \ov{\psi}{}_L^\bl\, \psi_R^j)
 			~-~ (g_{i\bk}\, \ov{\psi}{}_R^\bk\, \psi_R^i)\, (g_{j\bl}\, \ov{\psi}{}_L^\bl\, \psi_L^j)~.
 \end{align}
+	This action was originally introduced in \cite{SYhet}, although in a slightly different
+	normalization.
+	The two actions match if one normalizes the fermions $ \zr $ canonically, and
+	takes into account that our deformation parameter $ \tgamma $ is related to $ \gamma $ 
+	of Ref.~\cite{SYhet} as
+\[
+	\tgamma ~~=~~ \sqrt{2} g_0\cdot \gamma\,.
+\]
 	
 	The geometric form \eqref{cpn-1g} can be related to the gauge formulation (Eq.~\eqref{sigma_phys} with
-	vanishing twisted masses), modulo the common factor of $ 2\beta $, via the following stereographic projection
+	vanishing twisted masses) via the following stereographic projection
 \begin{align}
 %
 \notag
@@ -1224,9 +1230,9 @@ in the model \eqref{sigma_full},
 	with the same action as in Eq.~\eqref{exte},
 \beq
 \label{Ltw}
-	\mc{L}_{(0,2)}^\text{tw.m.} ~~=~~ \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}, V^i) 
+	\mc{L}_{(0,2)}^\text{tw.m.} ~~=~~ \frac{2}{g_0^2} \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}, V^i) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \gamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\gamma}\,\ov{\mc{B}}\,\ov{K} \rgr.
+		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr.
 \eeq
 	The action of the theory \eqref{Ltw} can be calculated by introducing covariantly-chiral superfields
 \begin{align*}
@@ -1244,7 +1250,7 @@ in the model \eqref{sigma_full},
 	This makes calculation of \eqref{Ltw} straightforward, and the only obvious difference with the massless
 	case comes from the algebra of the covariant derivatives $ \nabla^{(\bj)}_\alpha $ and 
 	$ \ov{\nabla}{}^{(i)}_\alpha $, {\it i.e.} from the presence of the constant gauge fields.
-	For calculation of the conjugate term $ \sqrt{2}\, \ov{\gamma}\,\ov{\mc{B}}\,\ov{K} $ one can find convenient to 
+	For calculation of the conjugate term $ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} $ one can find convenient to 
 	use covariantly-antichiral variables
 \begin{align*}
 %
@@ -1257,10 +1263,10 @@ in the model \eqref{sigma_full},
 \begin{align}
 %
 \notag
-	\mc{L}_{(0,2)}^\text{tw.m.} & ~~=~~ 
+	\frac{\mc{L}_{(0,2)}^\text{tw.m.}}{2\beta} & ~~=~~ 
 	g_{i\bj}\,(\nabla_\mu \phi^i)\, (\nabla_\mu\ov{\phi}{}^\bj)
 	~+~ \frac{1}{2}\, g_{i\bj}\, \psi^i\, i\overleftrightarrow{\slashed{\nabla}} \ov{\psi}{}^\bj
-	\\[1mm]
+	\\
 %
 \notag
 	&~
@@ -1273,38 +1279,38 @@ in the model \eqref{sigma_full},
 \notag
 	&~
 	~+~ \bzr\, i\p_L\, \zr ~+~ \bff \ff 
-	~-~ \gamma\, \ff\, g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj 
-	~-~ \bgamma\, \bff\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
+	~-~ \tgamma\, \ff\, g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj 
+	~-~ \btgamma\, \bff\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
 	\\[1mm]
 %
 \label{geomlin}
 	&~
-	~+~ \gamma\, \ff\, \frac{1}{\chi}\,\phi^\bj\, (\nabla_1^\bj + i \nabla_2^\bj) \bphi^\bj
-	~-~ \bgamma\, \bff\, \frac{1}{\chi}\,\bphi^\bi\, (\nabla_1^i - i \nabla_2^i) \phi^i
+	~+~ \tgamma\, \ff\, \frac{1}{\chi}\,\phi^\bj\, (\nabla_1^\bj + i \nabla_2^\bj) \bphi^\bj
+	~-~ \btgamma\, \bff\, \frac{1}{\chi}\,\bphi^\bi\, (\nabla_1^i - i \nabla_2^i) \phi^i
 	\\[1mm]
 %
 \notag
 	&~
-	~+~ \gamma\,\zr\cdot g_{i\bj}\, F^i\, \bpsi_L^\bj
-	~-~ \bgamma\, \bzr\cdot g_{i\bj}\, \ov{F}{}^\bj\, \psi_L^i
+	~+~ \tgamma\,\zr\cdot g_{i\bj}\, F^i\, \bpsi_L^\bj
+	~-~ \btgamma\, \bzr\cdot g_{i\bj}\, \ov{F}{}^\bj\, \psi_L^i
 	\\[3mm]
 %
 \notag
 	&~
-	~+~ \gamma\, \zr\, \p_i g_{k\bj}\, \psi_R^i\, \psi_L^k \cdot \bpsi_L^\bj
-	~+~ \bgamma\, \bzr\, \p_\bk g_{i\bj}\, \ov{\psi_R^\bj\, \psi}{}_L^\bk \cdot \psi_L^i
+	~+~ \tgamma\, \zr\, \p_i g_{k\bj}\, \psi_R^i\, \psi_L^k \cdot \bpsi_L^\bj
+	~+~ \btgamma\, \bzr\, \p_\bk g_{i\bj}\, \ov{\psi_R^\bj\, \psi}{}_L^\bk \cdot \psi_L^i
 	\\[3mm]
 %	
 \notag
 	&~
-	~+~ \gamma\, \zr\, g_{i\bj}\, \psi_R^i\, i\p_L \bphi^\bj
-	~+~ \bgamma\, \bzr\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L \phi^i
+	~+~ \tgamma\, \zr\, g_{i\bj}\, \psi_R^i\, i\p_L \bphi^\bj
+	~+~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L \phi^i
 	\\[3mm]
 %
 \notag
 	&~
-	~+~ \gamma\, \zr\, g_{i\bj}\, \psi_L^i\, (\nabla_1^\bj + i\nabla_2^\bj) \bphi^\bj
-	~+~ \bgamma\, \bzr\, g_{i\bj}\, \bpsi_L^\bj\, (\nabla_1^i - i\nabla_2^i) \phi^i
+	~+~ \tgamma\, \zr\, g_{i\bj}\, \psi_L^i\, (\nabla_1^\bj + i\nabla_2^\bj) \bphi^\bj
+	~+~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_L^\bj\, (\nabla_1^i - i\nabla_2^i) \phi^i
 	\,.
 \end{align}
 	The mass terms here are hidden in the covariant derivatives
@@ -1348,15 +1354,15 @@ The $ F^i $-term conditions are the same as in the massless heterotic theory, wh
 	gets modified by the masses,
 \beq
 \label{ffterm}
-	\ff ~~=~~ \bgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
-	      ~-~ i\, \bgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}\,.
+	\ff ~~=~~ \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
+	      ~-~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}\,.
 \eeq
 	As a result, we obtain, 
 \begin{align}
 %
 \notag
-	\mc{L}_{(0,2)}^\text{tw.m.} & ~~=~~ 
-	\bzr\, i\p_L\, \zr \\[3mm]
+	\frac{\mc{L}_{(0,2)}^\text{tw.m.}}{2\beta} & ~~=~~ 
+	\bzr\, i\p_L\, \zr \\[1mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
@@ -1374,31 +1380,31 @@ The $ F^i $-term conditions are the same as in the massless heterotic theory, wh
 \label{sgeom_phys}
 	&\!\!\!\!\!\!\!\!\!\!\!\!
 	~-~ (g_{i\bj}\, \psi_R^i\, \bpsi_R^\bj)\,(g_{k\bl}\, \psi_L^k\, \bpsi_L^\bl) 
-	~+~ (1 \!-\!|\gamma|^2)(g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj)\,(g_{k\bl}\,\psi_L^k\,\bpsi_R^\bl)
+	~+~ (1 \!-\!|\tgamma|^2)(g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj)\,(g_{k\bl}\,\psi_L^k\,\bpsi_R^\bl)
 	\\[3mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
-	~-~ \gamma\, g_{i\bj}\, i\p_L\bphi^\bj\, \psi_R^i\,\zr 
-	~-~ \bgamma\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L\phi^i\, \bzr
-	~-~ i\gamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\bgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	~-~ \tgamma\, g_{i\bj}\, i\p_L\bphi^\bj\, \psi_R^i\,\zr 
+	~-~ \btgamma\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L\phi^i\, \bzr
+	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[4mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
-	~+~ |\gamma|^2\, g_{i\bj}\, \bpsi_L^\bj\, \psi_L^i\, \bzr\, \zr
+	~+~ |\tgamma|^2\, g_{i\bj}\, \bpsi_L^\bj\, \psi_L^i\, \bzr\, \zr
 	\\[2mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
 	\\[2mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
-	~+~ |\gamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
+	~+~ |\tgamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
 			\cdot m_G^i\, \frac{\bphi^i\, \phi^i}{\chi}\,.
 \end{align}
 	Some comments are in order here on the notation used in this expression. First,
@@ -1433,27 +1439,27 @@ can use the (inverted) correspondence rules \eqref{stereo}.
 \begin{align}
 %
 \notag
-	\mc{L}_{(0,2)}^\text{tw.m.} & ~~\supset~~ 
+	\frac{\mc{L}_{(0,2)}^\text{tw.m.}}{2\beta} & ~~\supset~~ 
 	g_{i\bj}\, m_{G\mu}^i\,m_{G\mu}^\bj\, \phi^i\, \bphi^\bj
 	~+~ i\,\frac{1}{2}\,g_{i\bj}\,\psi_L^i\, \overleftrightarrow{m}{}_{\!G} \bpsi_R^\bj
 	~+~ i\,\frac{1}{2}\,g_{i\bj}\,\psi_R^i\, \overleftrightarrow{\ov{m}}{}_{\!G} \bpsi_L^\bj
-	\\[3mm]
-%
-\notag
-	&~
-	~-~ i\gamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\bgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[2mm]
 %
 \notag
 	&~
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
+	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	\\[2mm]
+%
+\notag
+	&~
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
 	\\[1mm]
 %
 \notag
 	&~
-	~+~ |\gamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
+	~+~ |\tgamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
 			\cdot m_G^i\, \frac{\bphi^i\, \phi^i}{\chi}
 	~~=~~
 	\\[1mm]
@@ -1461,7 +1467,7 @@ can use the (inverted) correspondence rules \eqref{stereo}.
 \label{sgeom_mass}
 	&\!\!\!\!\!\!\!\!
 	~=~
-	\sum_i |m_G^i|^2 \left|n^i \right|^2 ~-~ (1 \!-\! |\gamma|^2)\, \Bigl| \sum_i m_G^i\, |n^i|^2 \Bigr|^2 
+	\sum_i |m_G^i|^2 \left|n^i \right|^2 ~-~ (1 \!-\! |\tgamma|^2)\, \Bigl| \sum_i m_G^i\, |n^i|^2 \Bigr|^2 
 	\\
 %
 \notag
@@ -1472,14 +1478,14 @@ can use the (inverted) correspondence rules \eqref{stereo}.
 %
 \notag
 	&~
-	~+~ i\,(1\!-\!|\gamma|^2)\, m_G^i\,|n^i|^2\, (\bxir\,\xil) 
-	~+~ i\,(1\!-\!|\gamma|^2)\, \ov{m}{}_G^i\,|n^i|^2\, (\bxil\,\xir)
+	~+~ i\,(1\!-\!|\tgamma|^2)\, m_G^i\,|n^i|^2\, (\bxir\,\xil) 
+	~+~ i\,(1\!-\!|\tgamma|^2)\, \ov{m}{}_G^i\,|n^i|^2\, (\bxil\,\xir)
 	\\[3mm]
 %
 \notag
 	&~
-	~-~ i\,\gamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i\,\bgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
+	~-~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
+	~+~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
 	\\[3mm]
 %
 \notag
@@ -1513,53 +1519,55 @@ Formulation}
 
 	Since $ \mc{B} $ is a twisted superfield, one can introduce a twisted superpotential of the form
 \[
+	\frac{\Delta\mc{L}^\text{tw.m.}_{(0,2)}}{2\beta} ~~\supset~~
 	\frac{i}{\sqrt{2}}\,a \int \mc{B}\, d^2\wt{\theta} ~~+~~ \text{h.c.},
 	\qquad\qquad\qquad\qquad d^2\wt{\theta} ~=~ d\ov{\theta}{}_L\,d\theta_R\,
 \]
 	(here $ i/\sqrt{2} $ is a convenient normalization factor).
 	This creates a linear in $ \ff $ contribution in the Lagrangian
 \[
-	\Delta\mc{L}_{(0,2)}^\text{tw.m.} ~~\supset~~ i\,a\,\ff ~+~ i\,\ov{a}\,\bff ~+~ \bff\,\ff ~+ \dots,
+	\frac{\Delta\mc{L}_{(0,2)}^\text{tw.m.}}
+             {2\beta} ~~\supset~~ i\,a\,\ff ~+~ i\,\ov{a}\,\bff ~+~ \bff\,\ff ~+ \dots,
 \]
 	and, correspondingly, changes the $ \ff $-term condition \eqref{ffterm} to the following:
 \[
-	\ff ~~=~~ \bgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj 
-		~-~ i\, \bgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}
+	\ff ~~=~~ \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj 
+		~-~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}
 		~-~ i\, \ov{a}\,.
 \]
 	Substituting this into Eq.~\eqref{geomlin} produces (a) vacuum energy, and (b) mass shifts both for
 	bosons and fermions.
-	Choosing the appropriate value $$ a = \gamma\,m^N \,,$$ one can now match the masses
+	Choosing the appropriate value $$ a = \tgamma\,m^N \,,$$ one can now match the masses
 	of elementary excitations  to those of the
 	gauge formulation.
 	Overall, the supersymmetry-breaking theory has the following mass terms:
 \begin{align}
 %
 \notag
-	\mc{L}_{(0,2)}^\text{tw.m.} & 
+	\frac{\mc{L}_{(0,2)}^\text{tw.m.}}{2\beta} & 
 	~~=~~ \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}, V^i) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \gamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\gamma}\,\ov{\mc{B}}\,\ov{K} \rgr
-	\\[1mm]
+		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr
+	\\[0.5mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \gamma\,m^N\,\mc{B} 
-	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \bgamma\, \ov{m}{}^N\, \ov{\mc{B}}
+	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
+	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
 	~~\supset~~
 	\\
 %
 \notag
 	&\!\!\!\!\!\!\!\!
 	~\supset~~
-	|\gamma|^2\, \left|m^N\right|^2 
+	|\tgamma|^2\, \left|m^N\right|^2 
 	~+~ g_{i\bj}\, m_{G\mu}^i\, m_{G\mu}^\bj\, \phi^i\, \bphi^\bj
-	~+~ |\gamma|^2\, \lgr \ov{m}{}^N m_G^i ~+~ m^N \ov{m}{}_G^i \rgr \frac {\phi^i\,\bphi^i}{\chi}
+	~+~ |\tgamma|^2\, \lgr \ov{m}{}^N m_G^i ~+~ m^N \ov{m}{}_G^i \rgr \frac {\phi^i\,\bphi^i}{\chi}
 	\\[1mm]
 %
 \label{geom_mass}
 	&\!\!\!\!\!\!\!\!
-	~+~ |\gamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
+	~+~ |\tgamma|^2 \cdot \ov{m}{}_G^\bj\,\frac{\bphi^\bj\,\phi^\bj}{\chi}
 			\cdot m_G^i\, \frac{\bphi^i\, \phi^i}{\chi}
 	\\[1mm]
 %
@@ -1571,20 +1579,20 @@ Formulation}
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~+~ i\,|\gamma|^2\,m^N\,g_{i\bj}\,\psi_L^i\, \bpsi_R^\bj
-	~+~ i\,|\gamma|^2\,\ov{m}{}^N\,g_{i\bj}\,\psi_R^i\, \bpsi_L^\bj
+	~+~ i\,|\tgamma|^2\,m^N\,g_{i\bj}\,\psi_L^i\, \bpsi_R^\bj
+	~+~ i\,|\tgamma|^2\,\ov{m}{}^N\,g_{i\bj}\,\psi_R^i\, \bpsi_L^\bj
 	\\[4mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~-~ i\gamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\bgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[1mm]
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
-	~+~ i\, |\gamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_L^i\,\bpsi_R^\bj)\, \cdot m_G^k \frac{\bphi^k\, \phi^k}{\chi}
+	~+~ i\, |\tgamma|^2\, (g_{i\bj}\,\psi_R^i\,\bpsi_L^\bj)\, \cdot \ov{m}{}_G^\bk \frac{\bphi^\bk\,\phi^\bk}{\chi}
 	\,.
 \end{align}
 With all $N$ mass parameters included, the (spontaneous) breaking of SUSY occurs right away, 
@@ -1593,36 +1601,36 @@ at the classical level.
 Under the stereographic projection \eqref{stereo} this turns into
 \begin{align*}
 %
-	\mc{L}_{(0,2)}^\text{tw.m.} & 
+	\frac{\mc{L}_{(0,2)}^\text{tw.m.}}{2\beta} & 
 	~~\supset~~ 
-	|\gamma|^2\, \left|m^N\right|^2 
+	|\tgamma|^2\, \left|m^N\right|^2 
 	\\
 %
 	&\!\!\!\!\!\!\!\!
 	~+~
 	\lgr |m_G^i|^2 ~+~
-		|\gamma|^2 \Bigl\{ \ov{m}{}^N m_G^i ~+~ m^N \ov{m}{}_G^i \Bigr\} \rgr \left|n^i \right|^2 
-	~-~ (1 \!-\! |\gamma|^2)\, \Bigl| \sum_i m_G^i\, |n^i|^2 \Bigr|^2 
+		|\tgamma|^2 \Bigl\{ \ov{m}{}^N m_G^i ~+~ m^N \ov{m}{}_G^i \Bigr\} \rgr \left|n^i \right|^2 
+	~-~ (1 \!-\! |\tgamma|^2)\, \Bigl| \sum_i m_G^i\, |n^i|^2 \Bigr|^2 
 	\\
 %
 	&\!\!\!\!\!\!\!\!
-	~-~ i\, ( m_G^i \,+\, |\gamma|^2 m^N )\, \bxi_{Ri}\, \xi_L^i
-	~-~ i\, (\ov{m}{}_G^i \,+\, |\gamma|^2 \ov{m}{}^N )\, \bxi_{Li}\, \xi_R^i
-	\\[3mm]
-%
-	&\!\!\!\!\!\!\!\!
-	~+~ i\,(1\!-\!|\gamma|^2)\, m_G^i\,|n^i|^2\, (\bxir\,\xil) 
-	~+~ i\,(1\!-\!|\gamma|^2)\, \ov{m}{}_G^i\,|n^i|^2\, (\bxil\,\xir)
-	\\[3mm]
-%
-	&\!\!\!\!\!\!\!\!
-	~-~ i\,\gamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i\,\bgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
+	~-~ i\, ( m_G^i \,+\, |\tgamma|^2 m^N )\, \bxi_{Ri}\, \xi_L^i
+	~-~ i\, (\ov{m}{}_G^i \,+\, |\tgamma|^2 \ov{m}{}^N )\, \bxi_{Li}\, \xi_R^i
 	\\[4mm]
 %
 	&\!\!\!\!\!\!\!\!
-	~-~ i |\gamma|^2\, m^N\, \ov{\xi}{}_{RN}\, \xi_L^N
-	~-~ i |\gamma|^2\, \ov{m}^N\, \ov{\xi}{}_{LN}\, \xi_R^N\,,
+	~+~ i\,(1\!-\!|\tgamma|^2)\, m_G^i\,|n^i|^2\, (\bxir\,\xil) 
+	~+~ i\,(1\!-\!|\tgamma|^2)\, \ov{m}{}_G^i\,|n^i|^2\, (\bxil\,\xir)
+	\\[4mm]
+%
+	&\!\!\!\!\!\!\!\!
+	~-~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
+	~+~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
+	\\[5mm]
+%
+	&\!\!\!\!\!\!\!\!
+	~-~ i |\tgamma|^2\, m^N\, \ov{\xi}{}_{RN}\, \xi_L^N
+	~-~ i |\tgamma|^2\, \ov{m}^N\, \ov{\xi}{}_{LN}\, \xi_R^N\,,
 	\qquad\qquad
 	i ~=~ 1,...\,N-1\,.
 \end{align*}
@@ -1644,15 +1652,15 @@ obtained in the gauge formulation.
 	While it took us some effort to prove \ntwoo supersymmetry of the theory \eqref{sigma_full},
 	the geometric formulation of this theory 
 \begin{align*}
-	\mc{L}_{(0,2) }^\text{tw.m.} & 
+	\frac{\mc{L}_{(0,2) }^\text{tw.m.}}{2\beta} & 
 	~~=~~ \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}, V^i) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \gamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\gamma}\,\ov{\mc{B}}\,\ov{K} \rgr
+		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr
 	\\
 %
 	&~
-	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \gamma\,m^N\,\mc{B} 
-	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \bgamma\, \ov{m}{}^N\, \ov{\mc{B}}
+	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
+	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
 \end{align*}
 	is manifestly supersymmetric.
 	
