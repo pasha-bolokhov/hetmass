@@ -655,10 +655,10 @@ the following U(1) theory
 \notag
 	&
 	\hspace{-0.4cm}\phantom{2\beta\lgroup}
-	~-~ 2i\, \frac{\p^2 \hat{\mc{W}}}{\p \sigma^2}\, \blal\, \zr
-	~-~ 2i\, \frac{\p^2 \hat{\ov{\mc{W}}}}{\p \ov{\sigma}{}^2}\, \bzr\, \lal
-	~+~ 2i\, \frac{\p \hat{\mc{W}}}{\p \sigma}\, \ff
-	~+~ 2i\, \bff\, \frac{\p \hat{\ov{\mc{W}}}}{\p \ov{\sigma}}
+	~+~ 2i\, \frac{\p^2 \hat{\mc{W}}}{\p \sigma^2}\, \blal\, \zr
+	~+~ 2i\, \frac{\p^2 \hat{\ov{\mc{W}}}}{\p \ov{\sigma}{}^2}\, \bzr\, \lal
+	~-~ 2i\, \frac{\p \hat{\mc{W}}}{\p \sigma}\, \ff
+	~-~ 2i\, \bff\, \frac{\p \hat{\ov{\mc{W}}}}{\p \ov{\sigma}}
 	\biggr\rgroup ,
 	\\[1mm]
 %
@@ -868,9 +868,9 @@ One can restore the original form of
 the constraint  by performing a shift of the superorientational variable $ \xir $, namely,
 \begin{align*}
 %
-	& \xi_R' ~~=~~ \xir ~+~ \sqrt{2}\, \ov{\delta}\, n\, \bzr \,, \\[1mm]
+	& \xi_R' ~~=~~ \xir ~-~ \sqrt{2}\, \ov{\delta}\, n\, \bzr \,, \\[1mm]
 %
-	& \ov{\xi}{}_R' ~~=~~ \bxir ~+~ \sqrt{2}\, \delta \nbar\, \zr\,.
+	& \ov{\xi}{}_R' ~~=~~ \bxir ~-~ \sqrt{2}\, \delta \nbar\, \zr\,.
 \end{align*}
 	This obviously changes the normalization of the kinetic term for $ \zr $, which we
 	bring back to its canonical form by rescaling $ \zr $,
@@ -894,7 +894,7 @@ $\gamma$ was introduced in \cite{SYhet}.}:
 %
 \notag
 	&~
-	~-~ \tgamma\, i\p_L\nbar \xir\, \zr ~-~ \ov{\tgamma}\, \bxir i\p_L n\, \bzr
+	~+~ \tgamma\, i\p_L\nbar \xir\, \zr ~+~ \ov{\tgamma}\, \bxir i\p_L n\, \bzr
 	~+~ |\tgamma|^2\, \bxil \xil\, \bzr \zr
 	\\[3mm]
 %
@@ -911,8 +911,8 @@ $\gamma$ was introduced in \cite{SYhet}.}:
 %
 \notag
 	&~
-	~-~ i\tgamma\, m^l\, \ov{n}{}_l \xi_L^l\, \zr 
-	~+~ i\ov{\tgamma}\, \ov{m}{}^l\, \ov{\xi}{}_{Ll} n^l\, \bzr
+	~+~ i\tgamma\, m^l\, \ov{n}{}_l \xi_L^l\, \zr 
+	~-~ i\ov{\tgamma}\, \ov{m}{}^l\, \ov{\xi}{}_{Ll} n^l\, \bzr
 	\\[2mm]
 %
 \notag
@@ -983,8 +983,8 @@ Our current task is to more closely examine  the mass terms in Eq.~\eqref{sigma_
 %
 \notag
 	&~
-	~-~ i \tgamma\, (m^i - m^N)\, \ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i \ov{\tgamma}\, (\ov{m}{}^i - \ov{m}{}^N)\, \ov{\xi}{}_{Li}\, n^i\, \bzr
+	~+~ i \tgamma\, (m^i - m^N)\, \ov{n}{}_i\, \xi_L^i\, \zr
+	~-~ i \ov{\tgamma}\, (\ov{m}{}^i - \ov{m}{}^N)\, \ov{\xi}{}_{Li}\, n^i\, \bzr
 	\\[3mm]
 %
 \notag
@@ -1113,7 +1113,7 @@ One then constructs the heterotic Lagrangian
 \label{exte}
 	\mc{L}_{(0,2)} ~~=~~ \frac{2}{g_0^2} \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr,
+		~+~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~+~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr,
 \eeq
 	which obviously respects the invariance on the target space CP($N-1$).
 	Here
@@ -1135,8 +1135,8 @@ One then constructs the heterotic Lagrangian
 %
 \label{cpn-1g}
 			& 
-			~~-~~ \tgamma\, g_{i\bj}\, (i \p_L \ov{\phi}{}^\bj)\, \psi_R^i\, \zr
-			~-~ \ov{\tgamma}\, g_{i\bj}\, \ov{\psi}{}_R^\bj (i \p_L \phi^i)\, \bzr
+			~~+~~ \tgamma\, g_{i\bj}\, (i \p_L \ov{\phi}{}^\bj)\, \psi_R^i\, \zr
+			~+~ \ov{\tgamma}\, g_{i\bj}\, \ov{\psi}{}_R^\bj (i \p_L \phi^i)\, \bzr
 			~+~ |\tgamma|^2\, \bzr\,\zr \cdot ( g_{i\bj}\, \ov{\psi}{}_L^\bj\, \psi_L^i )
 	\\[3mm]
 %
@@ -1232,7 +1232,7 @@ in the model \eqref{sigma_full},
 \label{Ltw}
 	\mc{L}_{(0,2)}^\text{tw.m.} ~~=~~ \frac{2}{g_0^2} \int\, d^4\theta\, \lgr K(\Phi,\ov{\Phi}, V^i) 
 		~-~ 2\, \ov{\mc{B}}\,\mc{B}  
-		~-~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~-~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr.
+		~+~  \sqrt{2}\, \tgamma\,\mc{B}\,K  ~+~ \sqrt{2}\, \ov{\tgamma}\,\ov{\mc{B}}\,\ov{K} \rgr.
 \eeq
 	The action of the theory \eqref{Ltw} can be calculated by introducing covariantly-chiral superfields
 \begin{align*}
@@ -1279,38 +1279,38 @@ in the model \eqref{sigma_full},
 \notag
 	&~
 	~+~ \bzr\, i\p_L\, \zr ~+~ \bff \ff 
-	~-~ \tgamma\, \ff\, g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj 
-	~-~ \btgamma\, \bff\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
+	~+~ \tgamma\, \ff\, g_{i\bj}\, \psi_R^i\, \bpsi_L^\bj 
+	~+~ \btgamma\, \bff\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
 	\\[1mm]
 %
 \label{geomlin}
 	&~
-	~+~ \tgamma\, \ff\, \frac{1}{\chi}\,\phi^\bj\, (\nabla_1^\bj + i \nabla_2^\bj) \bphi^\bj
-	~-~ \btgamma\, \bff\, \frac{1}{\chi}\,\bphi^\bi\, (\nabla_1^i - i \nabla_2^i) \phi^i
+	~-~ \tgamma\, \ff\, \frac{1}{\chi}\,\phi^\bj\, (\nabla_1^\bj + i \nabla_2^\bj) \bphi^\bj
+	~+~ \btgamma\, \bff\, \frac{1}{\chi}\,\bphi^\bi\, (\nabla_1^i - i \nabla_2^i) \phi^i
 	\\[1mm]
 %
 \notag
 	&~
-	~+~ \tgamma\,\zr\cdot g_{i\bj}\, F^i\, \bpsi_L^\bj
-	~-~ \btgamma\, \bzr\cdot g_{i\bj}\, \ov{F}{}^\bj\, \psi_L^i
+	~-~ \tgamma\,\zr\cdot g_{i\bj}\, F^i\, \bpsi_L^\bj
+	~+~ \btgamma\, \bzr\cdot g_{i\bj}\, \ov{F}{}^\bj\, \psi_L^i
 	\\[3mm]
 %
 \notag
 	&~
-	~+~ \tgamma\, \zr\, \p_i g_{k\bj}\, \psi_R^i\, \psi_L^k \cdot \bpsi_L^\bj
-	~+~ \btgamma\, \bzr\, \p_\bk g_{i\bj}\, \ov{\psi_R^\bj\, \psi}{}_L^\bk \cdot \psi_L^i
+	~-~ \tgamma\, \zr\, \p_i g_{k\bj}\, \psi_R^i\, \psi_L^k \cdot \bpsi_L^\bj
+	~-~ \btgamma\, \bzr\, \p_\bk g_{i\bj}\, \ov{\psi_R^\bj\, \psi}{}_L^\bk \cdot \psi_L^i
 	\\[3mm]
 %	
 \notag
 	&~
-	~+~ \tgamma\, \zr\, g_{i\bj}\, \psi_R^i\, i\p_L \bphi^\bj
-	~+~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L \phi^i
+	~-~ \tgamma\, \zr\, g_{i\bj}\, \psi_R^i\, i\p_L \bphi^\bj
+	~-~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L \phi^i
 	\\[3mm]
 %
 \notag
 	&~
-	~+~ \tgamma\, \zr\, g_{i\bj}\, \psi_L^i\, (\nabla_1^\bj + i\nabla_2^\bj) \bphi^\bj
-	~+~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_L^\bj\, (\nabla_1^i - i\nabla_2^i) \phi^i
+	~-~ \tgamma\, \zr\, g_{i\bj}\, \psi_L^i\, (\nabla_1^\bj + i\nabla_2^\bj) \bphi^\bj
+	~-~ \btgamma\, \bzr\, g_{i\bj}\, \bpsi_L^\bj\, (\nabla_1^i - i\nabla_2^i) \phi^i
 	\,.
 \end{align}
 	The mass terms here are hidden in the covariant derivatives
@@ -1354,8 +1354,8 @@ The $ F^i $-term conditions are the same as in the massless heterotic theory, wh
 	gets modified by the masses,
 \beq
 \label{ffterm}
-	\ff ~~=~~ \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
-	      ~-~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}\,.
+	\ff ~~=~~ -\, \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj
+	      ~+~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}\,.
 \eeq
 	As a result, we obtain, 
 \begin{align}
@@ -1385,10 +1385,10 @@ The $ F^i $-term conditions are the same as in the massless heterotic theory, wh
 %
 \notag
 	&\!\!\!\!\!\!\!\!\!\!\!\!
-	~-~ \tgamma\, g_{i\bj}\, i\p_L\bphi^\bj\, \psi_R^i\,\zr 
-	~-~ \btgamma\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L\phi^i\, \bzr
-	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	~+~ \tgamma\, g_{i\bj}\, i\p_L\bphi^\bj\, \psi_R^i\,\zr 
+	~+~ \btgamma\, g_{i\bj}\, \bpsi_R^\bj\, i\p_L\phi^i\, \bzr
+	~+~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~-~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[4mm]
 %
 \notag
@@ -1447,8 +1447,8 @@ can use the (inverted) correspondence rules \eqref{stereo}.
 %
 \notag
 	&~
-	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	~+~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~-~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[2mm]
 %
 \notag
@@ -1484,8 +1484,8 @@ can use the (inverted) correspondence rules \eqref{stereo}.
 %
 \notag
 	&~
-	~-~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
+	~+~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
+	~-~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
 	\\[3mm]
 %
 \notag
@@ -1531,15 +1531,15 @@ Formulation}
 \]
 	and, correspondingly, changes the $ \ff $-term condition \eqref{ffterm} to the following:
 \[
-	\ff ~~=~~ \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj 
-		~-~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}
+	\ff ~~=~~ -\, \btgamma\, g_{i\bj}\, \psi_L^i\, \bpsi_R^\bj 
+		~+~ i\, \btgamma\, \ov{m}_G^i \frac{\bphi^i\, \phi^i}{\chi}
 		~-~ i\, \ov{a}\,.
 \]
 	Substituting this into Eq.~\eqref{geomlin} produces (a) vacuum energy, and (b) mass shifts both for
 	bosons and fermions.
-	Choosing the appropriate value $$ a = \tgamma\,m^N \,,$$ one can now match the masses
-	of elementary excitations  to those of the
-	gauge formulation.
+	Choosing the appropriate value 
+$$ a = -\, \tgamma\,m^N \,,$$ 
+	one can now match the masses of elementary excitations  to those of the gauge formulation.
 	Overall, the supersymmetry-breaking theory has the following mass terms:
 \begin{align}
 %
@@ -1552,8 +1552,8 @@ Formulation}
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
-	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
+	~-~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
+	~-~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
 	~~\supset~~
 	\\
 %
@@ -1585,8 +1585,8 @@ Formulation}
 %
 \notag
 	&\!\!\!\!\!\!\!\!
-	~-~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
-	~+~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
+	~+~ i\tgamma\, g_{i\bj}\, m_G^\bj\,\bphi^\bj\, \psi_L^i\,\zr
+	~-~ i\btgamma\, g_{i\bj}\,\ov{m}{}_G^i\, \bpsi_L^\bj\, \phi^i\,\bzr
 	\\[1mm]
 %
 \notag
@@ -1624,8 +1624,8 @@ Under the stereographic projection \eqref{stereo} this turns into
 	\\[4mm]
 %
 	&\!\!\!\!\!\!\!\!
-	~-~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
-	~+~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
+	~+~ i\,\tgamma\, m_G^i\,\ov{n}{}_i\, \xi_L^i\, \zr
+	~-~ i\,\btgamma\, \ov{m}{}_G^i\, \bxi_{Li}\, n^i\, \bzr\,,
 	\\[5mm]
 %
 	&\!\!\!\!\!\!\!\!
@@ -1659,8 +1659,8 @@ obtained in the gauge formulation.
 	\\
 %
 	&~
-	~+~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
-	~+~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
+	~-~ \frac{i}{\sqrt{2}} \int d^2\wt{\theta} \cdot \tgamma\,m^N\,\mc{B} 
+	~-~ \frac{i}{\sqrt{2}} \int d^2\ov{\wt{\theta}} \cdot \btgamma\, \ov{m}{}^N\, \ov{\mc{B}}
 \end{align*}
 	is manifestly supersymmetric.
 	
