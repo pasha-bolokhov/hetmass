@@ -122,8 +122,12 @@
 \newcommand{\zl}{\zeta_L}
 \newcommand{\nbar}{\ov{n}}
 
+\newcommand{\ssm}{{\scriptscriptstyle(M)}}
+\newcommand{\sse}{{\scriptscriptstyle(E)}}
+\newcommand{\cell}{{\mathcal L}}
 \newcommand{\CPC}{CP($N-1$)$\times$C }
 \newcommand{\CPCn}{CP($N-1$)$\times$C}
+\newcommand{\cpn}{CP$(N-1)\,$}
 
 \newcommand{\lar}{\lambda_R}
 \newcommand{\lal}{\lambda_L}
@@ -1692,7 +1696,187 @@ by RFBR Grant No. 09-02-00457a
 and by Russian State Grant for 
 Scientific Schools RSGSS-11242003.2.
 
+\newpage
+
+\addcontentsline{toc}{section}{Appendices}
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Alph{section}}
+
+\section{Notations in Euclidean Space}
+\label{app:eucl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	  		       A P P E N D I X
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{equation}{0}
+
+Since \cpn sigma model can be obtained as a dimensional reduction from four-dimensional theory,
+we present first our four-dimensional notations.
+The indices of four-dimensional spinors are raised and lowered by the SU(2) metric tensor,
+\beq
+	\psi_\alpha ~=~ \epsilon_{\alpha\beta}\, \psi^\beta, \qquad
+	\ov{\psi}{}_{\dot{\alpha}} ~=~ \epsilon_{\dot{\alpha}\dot{\beta}}\, \ov{\psi}{}^{\dot\beta}, \qquad 
+	\psi^\alpha ~=~ \epsilon^{\alpha\beta}\, \psi_\beta, \qquad
+	\ov{\psi}{}^{\dot{\alpha}} ~=~ \epsilon^{\dot\alpha\dot\beta}\, \ov{\psi}{}_{\dot\beta}~,
+\eeq
+	where
+\beq
+	\epsilon_{\alpha\beta} ~=~ \epsilon_{\dot\alpha\dot\beta} ~=~
+			\lgr \begin{matrix}
+			     	\ 0\  &  \ 1\   \\
+				 -1\  &  \ 0\  
+			     \end{matrix} \rgr,
+	\qquad \text{and} \qquad
+	\epsilon^{\alpha\beta} ~=~ \epsilon^{\dot\alpha\dot\beta} ~=~
+			\lgr \begin{matrix}
+				\ 0\ &   -1\   \\
+				\ 1\ &  \ 0\ 
+			     \end{matrix} \rgr.
+\eeq
+The contractions of the spinor indices are short-handed as
+\beq
+	\lambda\psi ~=~ \lambda_\alpha\, \psi^\alpha\,, \qquad
+	\ov{\lambda\psi} ~=~  \ov{\lambda}{}^{\dot\alpha}\, \ov{\psi}{}_{\dot\alpha}\,.
+\eeq
+The sigma matrices for the euclidean space we take as
+\beq
+	\sigma^{\alpha\dot\alpha}_\mu ~=~  \lgr {\bf 1},\quad -i\,\tau^k \rgr^{\alpha\dot{\alpha}}
+	\hspace{-2.0ex},
+	\qquad
+	\ov{\sigma}{}_{\dot\alpha\alpha\, \mu} ~=~ 
+			\lgr {\bf 1},\quad i\, \tau^k \rgr_{\dot\alpha\alpha},
+\eeq
+where $ \tau^k $ are the Pauli matrices.
+
+Reduction to two dimensions can be conveniently done by picking out $ x^0 $ and $ x^3 $ 
+as the world sheet (or ``longitudinal'') coordinates, and integrating over the orthogonal coordinates. 
+The two-dimensional derivatives are the defined to be
+\beq
+	\p_R  ~~=~~ \p_0 ~+~ i\p_3\,, \qquad   \p_L ~~=~~ \p_0 ~-~ i\p_3\,.
+\eeq
+One then identifies the lower-index spinors as the two-dimensional left- and right-handed chiral spinors
+\beq
+	\xi_{R} ~=~ \xi_{1}\,, \quad\qquad
+	\xi_{L} ~=~ \xi_{2}\,, \quad\qquad\qquad
+	\ov{\xi}{}_{R} ~=~ \ov{\xi}{}_{\dot{1}}\,, \quad\qquad
+	\ov{\xi}{}_{L} ~=~ \ov{\xi}{}_{\dot{2}}\,.
+\eeq
+
+For two-dimensional variables, the CP($N-1$) indices are written as upper ones 
+\[
+	n^l\,, \quad \xi^l\,,
+\]
+and lower ones for the conjugate moduli
+\[
+	\ov{n}{}_l\,, \quad \ov{\xi}{}_l\,, 
+\]
+where $ l~=~1,\, ...,\, N $.
+In the geometric formulation of CP($N-1$), global indices are written upstairs in both cases, only
+for the conjugate variables the indices with bars are used 
+\[
+	\phi^i\,,\ \psi^i\,, \qquad \ov{\phi}{}^\bi\,,\ \ov{\psi}{}^\bi\,, 
+	\qquad\qquad i,\ \bi ~=~ 1,\,...,\,N-1\,,
+\]
+and the metric $ g_{i\bj} $ is used to contract them.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section*{Appendix A: \\
+%Minkowski versus Euclidean formulation}
+\section{Minkowski versus Euclidean formulation}
+%\addcontentsline{toc}{section}{Appendix A: \\
+%Minkowski versus Euclidean formulation}
+ \renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
+\setcounter{equation}{0}
+ 
+ \renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+\setcounter{subsection}{0}
+\label{app:mink}
+
+Although this work considers the formulation of heterotic \cpn model in Euclidean space only, 
+a series of our papers work with both Minkowski and Euclidean conventions \cite{SYhet,BSYhet,SYhetlN}.
+It is useful to summarize the transition rules.
+If the Minkowski coordinates are
+\beq
+x^\mu_M =\{t,\,z\}\,,
+\label{appeone}
+\eeq
+the passage to the Euclidean space requires
+\beq
+t \to - i\tau\,,
+\label{appe2}
+\eeq
+and the Euclidean coordinates are
+\beq
+x^\mu_M =\{\tau,\,z\}\,.
+\label{appe3}
+\eeq
+The derivatives are defined as follows:
+\beqn
+\pt_L^M &=& \pt_t+\pt_z\,,\qquad \pt_R^M = \pt_t- \pt_z\,,
+\nonumber\\[2mm]
+\pt_L^E &=& \pt_\tau - i \pt_z\,,\qquad \pt_R^E = \pt_\tau + i \pt_z\,.
+\label{appe4}
+\eeqn
+The Dirac spinor is
+\beq
+\Psi =\left(
+\begin{array}{c}
+\psi_R\\[1mm]
+\psi_L
+\end{array}
+\right)
+\label{appe5}
+\eeq
+In passing to the Eucildean space $\Psi^M = \Psi^E$;
+however, $\bar\Psi$ is transformed,
+\beq
+\bar\Psi^M \to i \bar \Psi^E\,.
+\label{appe6}
+\eeq
+Moreover, $\Psi^E$ and $\bar \Psi^E$ are {\em not} related by the complex conjugation operation.
+They become independent variables. The fermion gamma matrices are defined as
+\beq
+\bar\sigma^\mu_M =\{1,\,-\sigma_3\}\,,\qquad \bar\sigma^\mu_E =\{1,\, i\sigma_3\}\,.
+\label{appe7}
+\eeq
+Finally, 
+\beq
+\cell_E =- \cell_M (t=-i\tau , ...).
+\eeq
+With this notation, formally, the fermion kinetic terms in $\cell_E $ and $\cell_M $
+coincide.
+%If we want the heterotic deformation term to have the same form in
+%$\cell_E $ and $\cell_M $ we must (and do) transform the heterotic deformation parameter as follows:
+We use the following equivalent definitions of the heterotic deformation terms
+\beq
+ \frac{g_0}{\sqrt 2} \tilde{\gamma}_\ssm\, \zeta_R G_{i\bj}\left(i\pt_L\bar\phi^{\,\bj}\right)\psi_R^i\,, 
+\qquad
+  \frac{1}{g_0^2}\, \wt{\gamma}_\sse\, \chi_R^a\, (i\p_L S^a) \zeta_R\,,
+\qquad
+  \frac{2}{g_0^2}\, \wt{\gamma}_\sse\, (i\p_L \ov{n}) \xi_R \zeta_R\,
+\label{appabiferm}
+\eeq
+in Minkowski and Euclidean spaces correspondingly. 
+The following transition rule applies,
+\beq
+\wt{\gamma}_\ssm = - i\,\wt\gamma_\sse\,.
+\label{appe8}
+\eeq
+%It is obvious from the context where the Euclidean or Minkowski formulation is implied.
+Everywhere where there is no menace of confusion we omit the super/sub\-scripts $M,E$.
+The first two terms in Eq.~(\ref{appabiferm}) originally were introduced in Ref.~\cite{SYhet}, with 
+a constant
+\beq
+	\gamma ~=~ \wt\gamma / (\sqrt{2}g_0) \,.
+\eeq
+In this paper, subscript $\scriptstyle (E)$ is always assumed for $\wt\gamma$.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1.5cm}
 \small
 \begin{thebibliography}{99}
 \itemsep -2pt
